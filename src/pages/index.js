@@ -6,6 +6,14 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 
+// Add the lolicode language
+// -------------------------
+import Prism from 'prism-react-renderer/prism';
+(typeof global !== 'undefined' ? global : window).Prism = Prism;
+
+require('../prism-lolicode');
+// --------------------------
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (

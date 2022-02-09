@@ -3,7 +3,15 @@ sidebar_label: 'Web Client'
 sidebar_position: 1
 ---
 
-# Native Client - Windows (64 bit)
+# Web Client
+If you're a Windows user, you have the ability to choose between the Web Client and the Native Client to use OpenBullet 2. They are interchangeable, and you can switch from one client to the other at any point in time by simply copying a folder. Consider using the Web Client if you're interested in these features
+
+- Good looking interface
+- Themes
+- Localized in multiple languages
+- Can be accessed from any device in your house
+
+# Installation on Windows
 First of all, download and install the [ASP.NET Core Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) for your OS.
 
 After this, download the `OpenBullet2.zip` archive from [the latest release page](https://github.com/openbullet/openbullet2/releases/latest) and unzip it in a folder on your PC.
@@ -20,6 +28,16 @@ Now navigate into the folder and double-click on `OpenBullet2.exe`.
 
 :::caution Warning
 If the program closes immediately, it means that the ASP.NET Core Runtime was not installed correctly.
+:::
+
+:::caution Warning
+If you're still on a 32-bit Windows OS, follow these steps instead.
+1. Open the folder you just extracted
+2. Holding down the SHIFT key on your keyboard, right click on an **empty** space inside the folder and select *Open PowerShell window here*
+3. Type the following command and press ENTER
+```bash
+dotnet ./OpenBullet2.Native.dll
+```
 :::
 
 A terminal window with colored text should appear. Wait until it prints the text you see in the picture below

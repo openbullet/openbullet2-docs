@@ -1,6 +1,6 @@
 ---
-sidebar_label: 'Web Client'
-sidebar_position: 1
+sidebar_label: 'Linux / MacOS'
+sidebar_position: 2
 ---
 
 # Web Client
@@ -22,6 +22,17 @@ Now open a terminal and `cd` into the folder you just extracted. Then execute th
 ```bash
 dotnet ./OpenBullet.dll
 ```
+
+:::info Info
+If you're on a **Linux Server** and only have access to the command line, then you can use these commands instead (replace `<VERSION>` with the latest version of OB2 that can be found at the link above, e.g. `0.2.0`)
+```bash
+sudo apt install -y wget unzip
+wget https://github.com/openbullet/OpenBullet2/releases/download/<VERSION>/OpenBullet2.zip
+unzip ./OpenBullet2.zip
+cd OpenBullet2
+dotnet ./OpenBullet2.dll
+```
+:::
 
 You should see some text like in the screenshot below
 

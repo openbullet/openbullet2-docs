@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Proxies
 
-# What are proxies
+### What are proxies
 A **proxy server** (or simply **proxy**) is a server that redirects traffic to another server, acting as a middleman. Bots usually make use of proxies to mask the original IP address that is sending the requests.
 
 ### Why are they useful
@@ -60,7 +60,7 @@ Although residential proxies may sound appealing, many providers that sell these
 Instead of having the IP address of each individual proxy, some services that offer **rotating proxies** allow you to connect to a single endpoint and they will automatically rotate the proxy in the back. This is useful if your application doesn't have built-in support for switching between multiple proxy servers (e.g. a web browser).
 
 :::info INFO
-OpenBullet 2 supports these proxies, but **you need to tick these options when you create a job**, so that the main IP of the service will never get banned, and more than one bot at a time is allowed to use it.
+OpenBullet 2 supports these proxies, but **you need to tick these options when you create a job** that uses this kind of proxies, so that the main IP of the service will never get banned, and more than one bot at a time is allowed to use it.
 
 ![Setup Page](/img/proxies/rotating-options.png)
 :::

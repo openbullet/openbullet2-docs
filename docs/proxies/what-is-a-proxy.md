@@ -62,7 +62,7 @@ Instead of having the IP address of each individual proxy, some services that of
 :::info INFO
 OpenBullet 2 supports these proxies, but **you need to tick these options when you create a job** that uses this kind of proxies, so that the main IP of the service will never get banned, and more than one bot at a time is allowed to use it.
 
-![Setup Page](/img/proxies/rotating-options.png)
+![Options for rotating proxies](/img/proxies/rotating-options.png)
 :::
 
 ### Where to get them

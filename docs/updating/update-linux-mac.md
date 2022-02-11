@@ -3,41 +3,31 @@ sidebar_label: 'Linux / MacOS'
 sidebar_position: 2
 ---
 
-# Web Client
-# Installation on Linux / MacOS
-First of all, download and install the ASP.NET Core Runtime (or the entire SDK if you prefer) by following these instructions:
+# Updating OpenBullet 2 on Linux / MacOS
+It is good practice to keep your OpenBullet 2 client updated in order to get the latest features and bugfixes.
 
-- [Linux](https://docs.microsoft.com/en-us/dotnet/core/install/linux)
-- [MacOS](https://docs.microsoft.com/en-us/dotnet/core/install/macos)
+When you see this icon in the lower part of the menu, it means it's time to update your client.
 
-After this, download the `OpenBullet2.zip` archive from [the latest release page](https://github.com/openbullet/openbullet2/releases/latest) and unzip it in a folder on your PC.
+![Update Available](/img/updating/web-client/notification.png)
 
-:::info Info
-It is not necessary to download the `Patch.zip` file. This file is downloaded by the updater to update OpenBullet 2 to the latest version from an older version.
+First of all, completely terminate OpenBullet 2's process. Note that this does not mean simply closing the tab in your browser, but it means exiting the console application that first opens when you start OpenBullet 2.
+
+:::caution Warning
+It is crucial to make sure OpenBullet 2 is stopped before updating, otherwise you will get a broken build and you will need to reinstall it.
 :::
 
-![GitHub Download](/img/installation/web-client/github-download.png)
-
-Now open a terminal and `cd` into the folder you just extracted. Then execute this command
+To update, follow these steps.
+1. Open a terminal
+2. `cd` into the main folder of OpenBullet 2
+3. Execute this command
 ```bash
-dotnet ./OpenBullet.dll
+dotnet ./Updater.dll
 ```
 
-:::info Info
-If you're on a **Linux Server** and only have access to the command line, then you can use these commands instead (replace `<VERSION>` with the latest version of OB2 that can be found at the link above, e.g. `0.2.0`)
-```bash
-sudo apt install -y wget unzip
-wget https://github.com/openbullet/OpenBullet2/releases/download/<VERSION>/OpenBullet2.zip
-unzip ./OpenBullet2.zip
-cd OpenBullet2
-dotnet ./OpenBullet2.dll
-```
-:::
+The update process should start. Wait until it finishes before attempting to start OpenBullet 2 again.
 
-You should see some text like in the screenshot below
-
-![Terminal Window](/img/installation/web-client/linux-terminal.png)
-
-Now navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000) using your favorite browser and you should see the setup page.
-
-![Setup Page](/img/installation/web-client/setup-page.png)
+Make sure the update has a successful result by reading the console prompts. The download of the patch might take some time so please wait until all the steps are completed. In case the update fails, you can
+1. check your connection
+2. check if `github.com` blocks your IP
+3. try again at a later time
+4. Ask for help on the [official forum](https://discourse.openbullet.dev)

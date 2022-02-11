@@ -4,7 +4,7 @@ sidebar_position: 3
 ---
 
 # Updating with Docker
-As you read see [here](https://stackoverflow.com/questions/32442822/how-to-update-software-inside-a-docker-container), the best practice is to not update the software running inside the container, but to make a new container by pulling the new image.
+As you can read [here](https://stackoverflow.com/questions/32442822/how-to-update-software-inside-a-docker-container), when it comes to Docker the best practice is not to update the software running inside the container, but to make a new container by pulling the new image.
 
 Make sure you mapped the `UserData` folder in the container to a local folder as instructed in the [installation guide](../installation/docker.md), so that you won't lose your data.
 

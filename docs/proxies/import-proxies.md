@@ -47,3 +47,8 @@ Note that a proxy does not need to have all these values. For example, you can j
 127.0.0.1:8080
 ```
 :::
+
+### Final result
+This is the result after importing the SOCKS 5 freebies from [proxyscrape.com](https://proxyscrape.com)
+
+![Settings for proxy check job](/img/proxies/untested-proxies.png)

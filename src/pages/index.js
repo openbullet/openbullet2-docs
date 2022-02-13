@@ -13,6 +13,7 @@ import Prism from 'prism-react-renderer/prism';
 
 require('../prism-lolicode');
 require('prismjs/components/prism-csharp');
+require('prismjs/components/prism-ini');
 // -------------------------------------
 
 function HomepageHeader() {

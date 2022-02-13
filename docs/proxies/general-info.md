@@ -56,7 +56,7 @@ On the other hand, some proxies are advertised as *residential*, and their IP ad
 Although residential proxies may sound appealing, many providers that sell these types of proxies are proxying your connection through infected computers that are part of a botnet.
 :::
 
-### Rotating proxies
+### Rotating proxies 🔄
 Instead of having the IP address of each individual proxy, some services that offer **rotating proxies** allow you to connect to a single endpoint and they will automatically rotate the proxy in the back. This is useful if your application doesn't have built-in support for switching between multiple proxy servers (e.g. a web browser).
 
 :::info INFO

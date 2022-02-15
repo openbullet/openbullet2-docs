@@ -26,4 +26,8 @@ Finally, select the *Wordlist Type* (more on wordlist types [here](./general-inf
 
 :::caution WARNING
 Make sure to import the wordlist with a wordlist type that is allowed by the config you want to run, otherwise you will get an error when you attempt to start a Multi Run Job with a wordlist whose type is not allowed by the config in question.
+
+You can check the wordlist types that are allowed by a config from the Config Settings.
+
+![Allowed Wordlist Types](/img/wordlist/allowed-types.png)
 :::

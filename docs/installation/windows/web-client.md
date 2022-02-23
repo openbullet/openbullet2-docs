@@ -9,7 +9,7 @@ If you're a Windows user, you have the ability to choose between the Web Client 
 - Good looking interface
 - Themes
 - Localized in multiple languages
-- Can be accessed from any device in your house
+- Can be configured to be accessed from any device in your LAN or across the internet (if hosted e.g. on a VPS)
 
 # Installation on Windows
 First of all, download and install the [ASP.NET Core Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) for your OS.

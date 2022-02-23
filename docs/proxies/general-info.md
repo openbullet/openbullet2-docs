@@ -47,7 +47,7 @@ These proxies provide the best anonimity level, hiding both the proxy's IP addre
 
 In order to check the anonimity level of a proxy, a *proxy judge* can be used. It is not possible to use a judge when checking proxies through OpenBullet 2 yet.
 
-### Datacenter vs Residential proxies 🏢🏠
+### Datacenter proxies 🏢 vs Residential proxies 🏠
 Not all IP addresses are born equal. If a proxy server is hosted inside a datacenter, its IP address will most likely be within a range that is well-known to be that of a service provider, hence making it more likely to be detected as a proxy.
 
 On the other hand, some proxies are advertised as *residential*, and their IP address is usually in the ranges that ISPs sell to retail customers, making it less likely to raise suspicion that a bot is sending the request instead of a real person.

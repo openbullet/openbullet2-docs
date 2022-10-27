@@ -20,7 +20,7 @@ It is not necessary to download the `Patch.zip` file. This file is downloaded by
 
 Now open a terminal and `cd` into the folder you just extracted. Then execute this command
 ```bash
-dotnet ./OpenBullet.dll
+dotnet ./OpenBullet2.dll
 ```
 
 :::info Info

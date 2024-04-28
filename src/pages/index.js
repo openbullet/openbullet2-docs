@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+import {Redirect} from '@docusaurus/router';
 
 // Add the lolicode and csharp languages
 // -------------------------------------
@@ -36,6 +37,8 @@ function HomepageHeader() {
 }
 
 export default function Home() {
+  return <Redirect to="/docs/intro" />;
+  /*
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
@@ -47,4 +50,5 @@ export default function Home() {
       </main>
     </Layout>
   );
+  */
 }

@@ -15,11 +15,11 @@ You will need to **create** a proxy group and give it a name. Once you created a
 ![Import button](/img/proxies/import-proxies-button.png)
 
 ### Different ways to import proxies
-There are 3 ways to import proxies in OpenBullet 2. You can:
+There are 3 ways to import proxies in OpenBullet 2. You can add them:
 
-- 📋 **Paste** the proxies in the textbox
-- 📁 Add them from a **file**
-- 🌎 Download them from a remote **URL**
+- 📋 **From text** by pasting the proxies in a textbox
+- 📁 **From file** on your machine's drive
+- 🌎 **From remote** by providing a remote URL
 
 When using any of these sources, there need to be only **one proxy per line**.
 

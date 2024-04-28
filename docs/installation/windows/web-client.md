@@ -4,11 +4,10 @@ sidebar_position: 1
 ---
 
 # Web Client
-If you're a Windows user, you have the ability to choose between the Web Client and the Native Client to use OpenBullet 2. They are interchangeable, and you can switch from one client to the other at any point in time by simply copying a folder. Consider using the Web Client if you're interested in these features
+If you're a Windows user, you have the ability to choose between the Web Client and the Native Client to use OpenBullet 2. They are interchangeable, and you can switch from one client to the other at any point in time by simply copying the `UserData` folder. Consider using the Web Client if you're interested in these features
 
 - Good looking interface
 - Themes
-- Localized in multiple languages
 - Can be configured to be accessed from any device in your LAN or across the internet (if hosted e.g. on a VPS)
 
 # Installation on Windows

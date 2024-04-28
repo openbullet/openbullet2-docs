@@ -43,21 +43,21 @@ These proxies do not hide your IP address, which is forwarded to the destination
 These proxies hide your IP address but don't hide the fact that the connection is being made via a proxy, thanks to the proxy's IP address being passed in the `Via` header of the request.
 
 #### Elite proxies ✔️
-These proxies provide the best anonimity level, hiding both the proxy's IP address and your IP address.
+These proxies provide the best anonimity level, by hiding your IP address and not revealing that you're using a proxy.
 
-In order to check the anonimity level of a proxy, a *proxy judge* can be used. It is not possible to use a judge when checking proxies through OpenBullet 2 yet.
+To check the anonimity level of a proxy, a *proxy judge* can be used. It is not possible to use a judge when checking proxies through OpenBullet 2 yet.
 
 ### Datacenter proxies 🏢 vs Residential proxies 🏠
 Not all IP addresses are born equal. If a proxy server is hosted inside a datacenter, its IP address will most likely be within a range that is well-known to be that of a service provider, hence making it more likely to be detected as a proxy.
 
-On the other hand, some proxies are advertised as *residential*, and their IP address is usually in the ranges that ISPs sell to retail customers, making it less likely to raise suspicion that a bot is sending the request instead of a real person.
+On the other hand, some proxies are advertised as *residential* (or *ISP*), and their IP address is usually in the ranges that Internet Service Providers sell to retail customers, making it less likely to raise suspicion that a bot is sending the request instead of a real person.
 
 :::caution WARNING
-Although residential proxies may sound appealing, many providers that sell these types of proxies are proxying your connection through infected computers that are part of a botnet.
+Although residential proxies may sound appealing, many providers that sell this type of proxies are proxying your connection through infected computers that are part of a botnet.
 :::
 
 ### Rotating proxies 🔄
-Instead of having the IP address of each individual proxy, some services that offer **rotating proxies** allow you to connect to a single endpoint and they will automatically rotate the proxy in the back. This is useful if your application doesn't have built-in support for switching between multiple proxy servers (e.g. a web browser).
+Instead of giving you the IP address of each individual proxy server, some service providers that offer **rotating proxies** allow you to connect to a single endpoint and they will automatically choose a random proxy, usually from a big pool of IPs, for each new request. This is useful if your application doesn't have built-in support for switching between multiple proxy servers (e.g. a web browser).
 
 :::info INFO
 OpenBullet 2 supports these proxies, but **you need to tick these options when you create a job** that uses this kind of proxies, so that the main IP of the service will never get banned, and more than one bot at a time is allowed to use it.

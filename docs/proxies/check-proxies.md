@@ -6,9 +6,9 @@ sidebar_position: 3
 # Check proxies
 
 ### Creating a Proxy Check Job
-OpenBullet 2 offers a built-in proxy checker. First of all you will need to [import some proxies](./import-proxies.md) in a proxy group.
+OpenBullet 2 offers a built-in proxy checker. If you didn't already, [import some proxies](./import-proxies.md) in a proxy group.
 
-Then go to the *Jobs* tab of OpenBullet 2 and click on *New*, then select *Proxy Check*. You will see these settings:
+Then go to the *Jobs* tab of OpenBullet 2 and click on *New*, then select *Proxy Check Job*. You will see these settings:
 
 ![Settings for proxy check job](/img/proxies/proxy-check-job-options.png)
 
@@ -22,9 +22,9 @@ After this, select the *proxy group* that you want to check. You can also select
 
 Tick *check only untested* if you already checked some of the proxies and don't want to check them again, untick them if you want to force the check of all proxies, regardless of their previous status.
 
-You can select which website to test the proxies against. This can be configured in the *OB Settings* section of OpenBullet 2, under the *Proxy Check Targets* settings. The Proxy Check Job will make a request to the provided site, and then look for the given success key in the source code of the response. You should check proxies against the site that you are going to build a config for, so you will know that the proxy is not blocked by the site.
+You can select which website to test the proxies against. This can be configured in the *OB Settings* section of OpenBullet 2, under the *Proxy Check Targets* settings. The Proxy Check Job will make a request to the provided site, and then look for the given success key in the source code of the response. You should check proxies against the site that you are going to build a config for, to make sure that the proxy is not blocked by that specific site.
 
-Finally, click on *Create Job* and you will be brought to the *Proxy Check Job Viewer* page.
+Finally, click on *Create Job* and you will be brought to the job's page.
 
 ### Running a Proxy Check Job
 You can now press start and wait until all proxies have been checked.
@@ -48,9 +48,3 @@ At this point you can
 - 🌎 **Filter** proxies **by country** and delete (or keep) proxies of a given country by using the *Delete filtered* button.
 
 Some sites block IP addresses that are detected to be from a foreign country, or certain countries (for example if a service is not available in some parts of the world), so removing proxies that are hosted in blocked countries will help improve the quality of the list and as a consequence speed up the execution of the config.
-
-:::info INFO
-To filter the list, click on the small icon next to the column header. You will then be able to set some constraints on the value of the field.
-
-![Filter](/img/proxies/filter.png)
-:::

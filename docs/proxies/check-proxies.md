@@ -45,6 +45,6 @@ If you don't see this information, reload the page by pressing F5 on your keyboa
 At this point you can
 - ❌ **Remove** the proxies that are marked as **Not Working** by using the *Delete not working* button
 - ❌ **Remove slow** proxies by setting up a ping threshold in milliseconds and then clicking on the *Delete slow* button
-- 🌎 **Filter** proxies **by country** and delete (or keep) proxies of a given country by using the *Delete filtered* button.
+- 🌎 **Filter** proxies **by country** and delete (or keep) proxies of a given country by using the *Delete filtered* button
 
 Some sites block IP addresses that are detected to be from a foreign country, or certain countries (for example if a service is not available in some parts of the world), so removing proxies that are hosted in blocked countries will help improve the quality of the list and as a consequence speed up the execution of the config.

@@ -5,12 +5,7 @@ sidebar_position: 4
 
 # Using proxies
 
-### In the Debugger
-You can use a proxy while debugging a config by setting up the test proxy like in the following image.
-
-![Proxy options in the debugger](/img/proxies/debugger-options.png)
-
-### In a Multi Run Job
+### Multi Run Job Options
 To use proxies when running a config through a Multi Run Job, you can specify some options that will handle how the proxy pool behaves during the run.
 
 First of all, create or edit an existing Multi Run Job and take a look at the proxy settings section of the job options.
@@ -33,7 +28,7 @@ This option manages how OpenBullet 2 will behave when a bot tries to get a proxy
 In this case, you can configure OpenBullet 2 to act in a few different ways:
 - **Do nothing**
 - **Unban** the existing proxies, without reloading them from the proxy sources
-- **Reload** the proxies from the sources
+- **Reload** the proxies from the sources. Be careful, when reloading proxies from their sources, all data related to the proxy (e.g., the number of times it was used, its ban timer, etc.) will be wiped, so it will look like a brand new proxy
 
 The proxy sources indicate where to take proxies from. See below for an explanation.
 
@@ -60,32 +55,6 @@ These sources supply the proxies that populate the Proxy Pool, which in turn dis
 - 🌐 **Remote** retrieves proxies from a remote endpoint. OpenBullet 2 sends a GET request to the endpoint, expecting a list of proxies in response, one per line, in the standard proxy syntax
 
 If any of these sources become unavailable, OpenBullet 2 will automatically switch to the other sources. If no proxies are found from any source, the software will retry several times with exponential backoff.
-
-### Proxy settings of a Config
-In the settings of a Config, you can also specify some options related to the use of proxies.
-
-![Config proxy settings](/img/proxies/config-proxy-settings.png)
-
-#### Use proxies
-By ticking the *Use proxies* option, you will configure the config's default setting that regulates whether to use proxies or not. Mind that this can be overridden by the job's *Proxy Mode* setting, so this is simply a suggestion that you make to the final user of the Config.
-
-#### Maximum uses per proxy
-This option manages how many times a proxy can be used before it's automatically banned. Use this if the site only allows a set number of attempts before it bans an IP address. If the value is set to 0, the feature is disabled.
-
-#### Ban loop evasion
-Sometimes, if you didn't configure your *Keycheck* blocks correctly (e.g., if the site is giving you an error message that you haven't seen before during your tests), a bot that is trying a specific data line might get stuck in a ban loop. This means that the bot will start banning one proxy after the other, independently of their actual working status, just because it thinks that the site is not accepting the proxy.
-
-This can be circumvented by setting up a limit to the number of times that a proxy can be banned for a given data line. Once the limit is reached, the data line is marked as *To Check* and the proxy is banned, letting the bot process the other data lines and effectively "unblocking" it.
-
-Then, you can review the data that was marked as *To Check* and update your *Keycheck* blocks to account for the new response that the site gave you.
-
-It is recommended to set the value of the *ban loop evasion* to a high (but not too high!) number, to prevent false positives, especially when using a lot of free unchecked proxies with average or bad quality.
-
-#### Ban statuses
-...
-
-#### Allowed proxy types
-...
 
 ### What to expect during a run
 During the run...

@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Proxies in configs'
+sidebar_label: 'Proxies for Config Makers'
 sidebar_position: 5
 ---
 
-# Proxies in Configs
+# Proxies for Config Makers
 
 ### Keycheck block
 The keycheck block can be used to alter the end status of a bot. For example, when using proxies, you might want to use a `BAN` keychain, to specify the conditions that will result in a proxy getting banned.

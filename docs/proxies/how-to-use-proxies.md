@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Using proxies'
+sidebar_label: 'How to use proxies'
 sidebar_position: 4
 ---
 
-# Using proxies
+# How to use proxies
 
 ### Multi Run Job Options
 To use proxies when running a config through a Multi Run Job, you can specify some options that will handle how the proxy pool behaves during the run.
@@ -26,9 +26,9 @@ This option manages how OpenBullet 2 will behave when a bot tries to get a proxy
 - all proxies have been marked as bad or banned
 
 In this case, you can configure OpenBullet 2 to act in a few different ways:
-- **Do nothing**
-- **Unban** the existing proxies, without reloading them from the proxy sources
-- **Reload** the proxies from the sources. Be careful, when reloading proxies from their sources, all data related to the proxy (e.g., the number of times it was used, its ban timer, etc.) will be wiped, so it will look like a brand new proxy
+- 🤷 **Do nothing**
+- 🚫 **Unban** the existing proxies, without reloading them from the proxy sources
+- 🔄 **Reload** the proxies from the sources. Be careful, when reloading proxies from their sources, all data related to the proxy (e.g., the number of times it was used, its ban timer, etc.) will be wiped, so it will look like a brand new proxy
 
 The proxy sources indicate where to take proxies from. See below for an explanation.
 
@@ -56,5 +56,32 @@ These sources supply the proxies that populate the Proxy Pool, which in turn dis
 
 If any of these sources become unavailable, OpenBullet 2 will automatically switch to the other sources. If no proxies are found from any source, the software will retry several times with exponential backoff.
 
+### Global proxy settings
+In the RL Settings section of OpenBullet 2, you will find a few more settings related to proxies. These settings have a global effect on all jobs.
+
+![RL Proxy Settings](/img/proxies/rl-proxy-settings.png)
+
+#### Connection timeout
+The *connection timeout* sets an upper bound to the amount of time it can take to connect to a proxy. Note that connecting doesn't mean performing the actual request, but just establishing a connection between OpenBullet 2 and the proxy server.
+
+#### Read/write timeout
+The *read/write timeout* regulates the maximum time it can take to read or write data on the proxy connection.
+
+If one of the two timeouts is exceeded, an error is thrown and the bot using the proxy will end with an `ERROR` status.
+
+#### Global ban keys
+In the *global ban keys* field you can write a list of keywords (one per line) that indicate that a proxy should be banned. Usually, these include keywords that indicate the presence of a captive portal or region-based access control of some sort. This is a way to ban free low-quality proxies without the need to put all those keywords inside the *Keycheck* block of your configs.
+
+These keys will be checked when executing a *Keycheck* block, and if they are present in the `data.SOURCE` variable, they will lead to a `BAN` status.
+
+#### Global retry keys
+Just like *global ban keys*, *global retry keys* give you the ability to define a list of keywords that indicate transient errors of proxy, and will lead to a `RETRY` status so that the data line can be retried with the same proxy.
+
 ### What to expect during a run
-During the run...
+When you start a Multi Run Job that is configured to use proxies, all the available proxies will be loaded from the proxy sources you configured, and put in the *Proxy Pool*. This pool will hand out proxies to the bots when they request them.
+
+Proxies will then get banned over time as the run progresses. You can monitor the health of the *Proxy Pool* through the *Proxy Stats* section in the details of the Multi Run Job.
+
+![Proxy stats](/img/proxies/proxy-stats.png)
+
+When a bot requests a proxy but no proxy is available (e.g., when all proxies are busy or banned), it will simply wait until one becomes available.

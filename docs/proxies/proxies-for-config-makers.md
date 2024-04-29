@@ -10,7 +10,7 @@ The keycheck block can be used to alter the end status of a bot. For example, wh
 
 ![Keycheck block](/img/proxies/keycheck-block.png)
 
-```loli
+```loli title="LoliCode"
 BLOCK:Keycheck
   KEYCHAIN SUCCESS OR
     STRINGKEY @data.SOURCE Contains "Success!"

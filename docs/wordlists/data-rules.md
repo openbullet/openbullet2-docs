@@ -4,6 +4,8 @@ sidebar_position: 5
 ---
 
 # Data rules
+
+### General information
 Data rules are additional, config-specific checks that can be applied to individual slices of a data line after it has been parsed from the data pool. These rules can be set up in the config settings page.
 
 For instance, let's consider the following Wordlist Type

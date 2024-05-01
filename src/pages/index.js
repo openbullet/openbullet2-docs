@@ -9,7 +9,7 @@ import {Redirect} from '@docusaurus/router';
 
 // Add the lolicode and csharp languages
 // -------------------------------------
-import Prism from 'prism-react-renderer/prism';
+import { Prism } from 'prism-react-renderer';
 (typeof global !== 'undefined' ? global : window).Prism = Prism;
 
 require('../prism-lolicode');

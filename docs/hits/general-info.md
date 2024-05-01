@@ -82,7 +82,7 @@ Format=<CAPTURE>
 The available keywords that will be replaced with the corresponding data from the hit are
 
 | Name              | Explanation                                            |
-|-------------------|--------------------------------------------------------|
+|:------------------|:-------------------------------------------------------|
 |`<DATA>`           |The data from the data pool that was used to get the hit|
 |`<DATE>`           |The time and date when the hit was obtained|
 |`<CATEGORY>`       |The category of the config that obtained the hit|

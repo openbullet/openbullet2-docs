@@ -66,5 +66,9 @@ The first wordlist type of the `Environment.ini` file is the one that will be as
 :::
 
 :::info INFO
+Editing the `Environment.ini` requires a restart of OpenBullet 2 for the changes to take effect.
+:::
+
+:::info INFO
 You can also use the [Data Rules](./data-rules) in a config's settings to enforce rules on individual slices.
 :::

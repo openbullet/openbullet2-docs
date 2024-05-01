@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Hits
 
-All of the hits you obtain with a *Multi Run Job* that has *Database* in its *Hit Outputs* will be saved to the sqlite database. You can view them in the *Hits* section of OpenBullet 2.
+All of the hits you obtain with a *Multi Run Job* that has *Database* in its *Hit Outputs* will be saved to the SQLite database, usually saved in `UserData/OpenBullet2.db`. You can view them in the *Hits* section of OpenBullet 2.
 
 ### Types of hits
 Hits have a type that depends on the *status* of the bot when it ended the execution of the config. Configs can change the status of the bot that executes them through *Keycheck* blocks or statements that specifically set the value of the `data.STATUS` variable. The values of the status that will result in a hit being sent to the hit outputs (for example the database) are, by default,
@@ -23,39 +23,19 @@ Name=MYSTATUS
 Color=#FF00FF
 ```
 
-The `Name` can be anything (a single uppercase word is suggested for consistency) and the `Color` (defined with HTML notation) is used to color the keychains of a Keycheck block accordingly.
+The `Name` can be anything (an uppercase word is suggested for consistency) and the `Color` (defined with HEX notation) is used to color the keychains of a Keycheck block accordingly.
 
 :::info INFO
-Editing this file requires a restart of OpenBullet 2 for the changes to take effect.
+Editing the `Environment.ini` requires a restart of OpenBullet 2 for the changes to take effect.
 :::
 
 ### Operations on hits
 You can view the list of hits in a table, which can also be filtered.
 
-Operations on hits can be executed on *Selected* or *Filtered* hits.
-
-#### Selected hits
-In this case, operations will only be executed on the hits you manually selected. To select a hit, simply click on it.
-
-If you want to select multiple hits, you can
-- click on each individual hit while holding down the CTRL button on your keyboard
-- hold down the SHIFT button on your keyboard, then click on the first and the last hit to select a range of hits
-
-#### Filtered hits
-In this case, operations will be executed on all hits that have not been filtered out by the filters you set.
-
-To filter hits you can click on the small filter icon next to the name of the column on which you desire to filter.
-
-![Filter](/img/hits/filter.png)
-
----
-
 The available operations are:
-- **Copy** - copies the hits to the clipboard
-- **Download** - download a text file with the hits inside
-- **Edit** - Edits a hit (e.g. if you want to manually adjust the captured data)
+- **Copy with format** - copies the hits to the clipboard with the chosen format
+- **Download with format** - download a text file with the hits inside, in the chosen format
 - **Send to recheck** - Creates a new Multi Run Job with the config that originally got the hits (if still present) and a file data pool that points to a temporary file where the hits to recheck are written. This is useful if you want to check some hits again to make sure they are still valid
-- **Delete** - Deletes the hits
 - **Delete duplicates** - Removes the duplicate hits.
 - **Purge** - ⚠️ Deletes ALL of your hits, only do this if you are REALLY sure that you want to delete all the hits in the database
 
@@ -63,16 +43,8 @@ The available operations are:
 The wordlist is taken into consideration when deduplicating hits, if you wish to ignore it, then go to the *OB Settings* page and enable *Ignore the wordlist name when removing duplicates from hits*
 :::
 
-:::caution WARNING
-If you are using the web client without HTTPS, when copying hits to the clipboard, your browser will show you this error
-
-![Hits](/img/jobs/multi-run-job/clipboard-error.png)
-
-To solve this problem you can either enable unsecure sources in the browser or use something like [ngrok or cloudflared](https://discourse.openbullet.dev/t/your-openbullet-online/925)
-:::
-
 ### Export Formats
-When copying or downloading hits, you can define the fields you want to keep by selecting your desired *Export Format*. For example, an export format like `<DATA> | <CAPTURE>` will print the data and the capture separated by a pipe, for example `00042 | Valid = true`. You can choose between the built-in formats or you can also define a custom one by editing the `Environment.ini` file.
+When copying or exporting hits, you can define the fields you want to keep by selecting your desired *Export Format*. For example, an export format like `<DATA> | <CAPTURE>` will print the data and the capture separated by a pipe (e.g., `00042 | Valid = true`). You can choose between the built-in formats or you can also define a custom one by editing the `Environment.ini` file.
 
 ```ini title="Environment.ini"
 [EXPORT FORMAT]
@@ -93,3 +65,7 @@ The available keywords that will be replaced with the corresponding data from th
 |`<CAPTURE>`        |The captured data|
 
 Everything else will not be replaced. You can also use `\n`, `\r` and `\t` for new lines and tab characters.
+
+:::info INFO
+Editing the `Environment.ini` requires a restart of OpenBullet 2 for the changes to take effect.
+:::

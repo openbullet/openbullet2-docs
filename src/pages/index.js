@@ -13,8 +13,10 @@ import { Prism } from 'prism-react-renderer';
 (typeof global !== 'undefined' ? global : window).Prism = Prism;
 
 require('../prism-lolicode');
+require('prismjs/components/prism-bash');
 require('prismjs/components/prism-csharp');
 require('prismjs/components/prism-ini');
+require('prismjs/components/prism-json');
 // -------------------------------------
 
 function HomepageHeader() {

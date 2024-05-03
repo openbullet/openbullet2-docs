@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Hits
 
-All of the hits you obtain with a *Multi Run Job* that has *Database* in its *Hit Outputs* will be saved to the SQLite database, usually saved in `UserData/OpenBullet2.db`. You can view them in the *Hits* section of OpenBullet 2.
+All of the hits you obtain with a *Multi Run Job* that has *Database* in its [hit outputs](./hit-outputs.md) will be saved to the SQLite database, usually saved in `UserData/OpenBullet2.db`. You can view them in the *Hits* section of OpenBullet 2.
 
 ### Types of hits
 Hits have a type that depends on the *status* of the bot when it ended the execution of the config. Configs can change the status of the bot that executes them through *Keycheck* blocks or statements that specifically set the value of the `data.STATUS` variable. The values of the status that will result in a hit being sent to the hit outputs (for example the database) are, by default,

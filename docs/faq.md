@@ -11,6 +11,7 @@ sidebar_position: 100
 No, OpenBullet 2 can read `.loli` configs, except for a few specific blocks or settings. You can simply import a `.loli` config inside OpenBullet 2 and it will automatically repackage it into the `.opk` format. You can also drop the config in the `UserData/Configs` folder and perform a rescan to achieve the same thing.
 
 The following features are **not supported**:
+- editing the config through *Stacker*, only raw *LoliScript* code
 - a few config settings from the old OB1 system
 - the *MOUSEACTION* command
 - the *CFBypass* block

@@ -6,7 +6,7 @@ sidebar_position: 2
 # Job Monitor
 The *job monitor* allows you to monitor your jobs and execute some actions if they meet specific conditions. Each set of conditions and actions to execute is called a *triggered action*.
 
-### Triggered action
+### Triggered actions
 A *triggered action* is made of *triggers* and *actions*. When **all** triggers in a triggered action are satisfied **at the same time**, the triggered action will execute **all** the actions, **in sequence** (one after the other).
 
 For example, you might want to create a triggered action that stops a job after it gets a single hit. Here's how you would set it up:

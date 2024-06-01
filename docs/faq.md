@@ -18,5 +18,4 @@ The following features are **not supported**:
 - selenium chrome extensions
 - random UA for selenium
 - step by step debugging (issue already on github)
-- the *BOTNUM* variable
 - OB1 block plugins

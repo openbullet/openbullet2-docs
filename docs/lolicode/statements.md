@@ -4,6 +4,7 @@ sidebar_position: 4
 ---
 
 # LoliCode statements
+In addition to blocks, LoliCode also has statements that can be used to control the flow of the script, print messages to the debugger log, and more.
 
 ## LOG
 Prints text to the debugger log.

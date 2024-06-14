@@ -6,7 +6,7 @@ sidebar_position: 1
 # Updating the Web Client on Windows
 It is good practice to keep your OpenBullet 2 client updated in order to get the latest features and bugfixes.
 
-When you see this icon in the lower part of the menu, it means it's time to update your client.
+When you see this icon next to the version number, it means it's time to update your client.
 
 ![Update Available](/img/updating/web-client/notification.png)
 

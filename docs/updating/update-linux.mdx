@@ -1,9 +1,12 @@
 ---
-sidebar_label: 'Web Client'
-sidebar_position: 1
+sidebar_label: 'Linux'
+sidebar_position: 2
 ---
 
-# Updating the Web Client on Windows
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Updating on Linux
 It is good practice to keep your OpenBullet 2 client updated in order to get the latest features and bugfixes.
 
 When you see this icon in the lower part of the menu, it means it's time to update your client.
@@ -15,11 +18,20 @@ If you click on it, you will see a changelog with the latest changes and a butto
 ## How to update
 First of all, completely terminate OpenBullet 2's process. Note that this does not mean simply closing the tab in your browser, but it means exiting the console application that first opens when you start OpenBullet 2.
 
-To update, simply navigate into the main folder of OpenBullet 2 and double-click on `ob2-updater-web-win-x64.exe` to run the updater.
+To update, navigate into the main folder of OpenBullet 2 and run the updater.
 
-:::caution Warning
-If you're still on a 32-bit Windows OS, use `ob2-updater-web-win-x86.exe` instead.
-:::
+<Tabs>
+    <TabItem value="x64" label="x64" default>
+        ```bash
+        ./ob2-updater-web-linux-x64
+        ```
+    </TabItem>
+    <TabItem value="arm64" label="arm64">
+        ```bash
+        ./ob2-updater-web-linux-arm64
+        ```
+    </TabItem>
+</Tabs>
 
 The updater will guide you through the process of updating the Web Client.
 

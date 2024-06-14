@@ -14,6 +14,8 @@
   --ifm-color-primary-lighter: #4F6BDF;
   --ifm-color-primary-lightest: #5A76E9;
   --ifm-code-font-size: 95%;
+  --ifm-footer-padding-vertical: 1rem;
+  --ifm-footer-padding-horizontal: 1rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -36,4 +38,58 @@ html[data-theme='dark'] {
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+a.download-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+img.pre-download-icon {
+  max-height: 30px;
+  margin-right: 10px;
+}
+
+img.post-download-icon {
+  max-height: 20px;
+  margin-left: 10px;
+}
+
+.download-button span {
+  font-size: 14px;
+}
+
+.ob2-download-button {
+  background-color: #222222;
+}
+
+.dotnet-download-button {
+  background-color: #512bd4;
+}
+
+.ob2-download-button:hover {
+  background-color: #282828;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dotnet-download-button:hover {
+  background-color: #623af1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

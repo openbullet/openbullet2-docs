@@ -1,0 +1,48 @@
+---
+sidebar_label: 'Native Client'
+sidebar_position: 2
+---
+
+import OBDownloadButton from '@site/src/components/OBDownloadButton';
+import DotnetDownloadButton from '@site/src/components/DotnetDownloadButton';
+
+# Native Client
+If you're a Windows user, you have the ability to choose between the Web Client and the Native Client to use OpenBullet 2. They are interchangeable, and you can switch from one client to the other at any point in time by simply copying the `UserData` folder. Consider using the Native Client if you're interested in these features
+
+- Native app experience without the need of a browser
+- Highly responsive UI with high refresh rate performance
+
+## Installation on Windows
+<OBDownloadButton fileName="ob2-native-updater-win-x64.exe">Native Updater (win-x64)</OBDownloadButton>&nbsp;&nbsp;
+<DotnetDownloadButton version="8.0" fileName="windowsdesktop-runtime-win-x64.exe">Desktop Runtime (win-x64)</DotnetDownloadButton>
+
+Move the updater to a new empty folder, then double-click it to run it.
+
+:::caution Warning
+Windows Defender might block the updater from running. If this happens, click on *More info* and then on *Run anyway*. The updater is automatically built through a GitHub Actions pipeline. If for any reason you don't trust it, you can also compile it yourself from the source code.
+:::
+
+:::info Info
+You could also directly download [**OpenBullet2.Native.zip**](https://github.com/openbullet/openbullet2/releases/latest/download/OpenBullet2.Native.zip), but the updater is recommended since it can be used to easily update your installation in the future.
+:::
+
+If you don't have the latest [.NET Desktop Runtime](https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x64.exe) installed on your system, the updater will prompt you to install it. **This is required to run OpenBullet 2 (Native).**
+
+Once the updater is done downloading the latest version of OpenBullet 2, double-click `OpenBullet2.Native.exe` to start it. You should now see the application window.
+
+![Application Window](/img/installation/native-client/home-page.jpg)
+
+## Troubleshooting
+
+### OpenBullet 2 closes immediately
+If the program closes immediately, it means that the [.NET Desktop Runtime](https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x64.exe) was not installed correctly.
+
+### I'm on a 32-bit Windows OS
+If you're still on a 32-bit Windows OS, follow these steps instead.
+1. Download the 32-bit version of the updater from [this link](https://github.com/openbullet/openbullet2/releases/latest/download/ob2-native-updater-win-x86.exe).
+2. If you don't have it, download the [.NET Desktop Runtime for win-x86](https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x86.exe) and install it.
+3. Holding down the SHIFT key on your keyboard, right click on an **empty** space inside the folder and select *Open PowerShell window here*
+4. Type the following command and press ENTER
+```bash
+dotnet ./OpenBullet2.Native.dll
+```

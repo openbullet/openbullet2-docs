@@ -1,0 +1,66 @@
+---
+sidebar_label: 'Linux'
+sidebar_position: 2
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import OBDownloadButton from '@site/src/components/OBDownloadButton';
+
+# Web Client
+If you're a Linux user, you can only use the Web Client.
+
+## Installation on Linux
+First of all, download and install the ASP.NET Core Runtime by following [these instructions](https://docs.microsoft.com/en-us/dotnet/core/install/linux).
+
+Next, download the right updater for your platform and place it in an empty folder in your file system.
+
+<OBDownloadButton fileName="ob2-web-updater-linux-x64">Web Updater (x64)</OBDownloadButton>&nbsp;&nbsp;<OBDownloadButton fileName="ob2-web-updater-linux-arm64">Web Updater (arm64)</OBDownloadButton>
+
+:::info Info
+You could also directly download [**OpenBullet2.Web.zip**](https://github.com/openbullet/openbullet2/releases/latest/download/OpenBullet2.Web.zip), but the updater is recommended since it can be used to easily update your installation in the future.
+:::
+
+<Tabs>
+    <TabItem value="x64" label="x64" default>
+        Open a terminal and `cd` into the folder where you placed the updater. Then execute the following commands
+        ```bash
+        chmod +x ./ob2-web-updater-linux-x64
+        ./ob2-web-updater-linux-x64
+        ```
+    </TabItem>
+    <TabItem value="arm64" label="arm64">
+        Open a terminal and `cd` into the folder where you placed the updater. Then execute the following commands
+        ```bash
+        chmod +x ./ob2-web-updater-linux-arm64
+        ./ob2-web-updater-linux-arm64
+        ```
+    </TabItem>
+</Tabs>
+
+Once the updater is done downloading the latest version of OpenBullet 2, execute this command to start the application
+```bash
+dotnet ./OpenBullet2.Web.dll
+```
+
+Wait until it prints the text you see in the picture below
+
+![Terminal Window](/img/installation/web-client/windows-terminal.png)
+
+Finally, navigate to [http://localhost:5000](http://localhost:5000) using your favorite browser and you should see the home page.
+
+![Application Window](/img/installation/web-client/home-page.png)
+
+## Troubleshooting
+
+### I'm on a Linux server without a GUI
+If you're on a **Linux Server (x64)** and only have access to the command line, then you can use these commands instead
+```bash
+sudo apt install -y wget
+wget https://github.com/openbullet/openbullet2/releases/latest/download/ob2-web-updater-linux-x64
+chmod +x ./ob2-web-updater-linux-x64
+./ob2-web-updater-linux-x64
+dotnet ./OpenBullet2.Web.dll
+```
+
+Replace `x64` with `arm64` in the commands above if you're on an ARM64 system.

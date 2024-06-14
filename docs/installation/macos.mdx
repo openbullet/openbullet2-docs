@@ -1,0 +1,29 @@
+---
+sidebar_label: 'MacOS'
+sidebar_position: 3
+---
+
+import OBDownloadButton from '@site/src/components/OBDownloadButton';
+
+# Web Client
+If you're a MacOS user, you can only use the Web Client. The updater is not available, since unsigned executables are not allowed to run on MacOS.
+
+## Installation on MacOS
+First of all, download and install the ASP.NET Core Runtime by following [these instructions](https://docs.microsoft.com/en-us/dotnet/core/install/macos).
+
+Then, download the latest version of OpenBullet 2
+
+<OBDownloadButton fileName="ob2-web-updater-win-x64.exe">OpenBullet2.Web.zip</OBDownloadButton>
+
+Unzip the archive and open a terminal. `cd` into the folder where you placed the unzipped files. Then execute the following command
+```bash
+dotnet ./OpenBullet2.Web.dll
+```
+
+Wait until it prints the text you see in the picture below
+
+![Terminal Window](/img/installation/web-client/windows-terminal.png)
+
+Finally, navigate to [http://localhost:5000](http://localhost:5000) using your favorite browser and you should see the home page.
+
+![Application Window](/img/installation/web-client/home-page.png)

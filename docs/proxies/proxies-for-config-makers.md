@@ -55,6 +55,11 @@ You can use a proxy while debugging a config by setting up the test proxy like i
 ![Proxy options in the debugger](/img/proxies/debugger-options.png)
 
 ### In LoliCode / C#
+| Property | Type | Notes |
+|:-------------|:-----|:------|
+| `data.UseProxy` | bool | whether the bot is using a proxy or not |
+| `data.Proxy` | Proxy | the proxy that is currently being used by the bot |
+
 The `data.Proxy` property provides information about the proxy that is currently being used by a bot. If no proxy is used, its value is `null`. Otherwise, it has the following sub-properties:
 
 | Sub-property | Type | Notes |

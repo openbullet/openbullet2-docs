@@ -7,7 +7,7 @@ sidebar_position: 1
 The guests feature allows you to share your configs with other users by giving them access to a limited set of features on your OpenBullet 2 instance. This is useful when you want to share your configs with someone who will be able to use them but not modify them.
 
 :::info INFO
-To allow other people to connect to your OpenBullet 2 instance, you need to open the port 5000 on your firewall and forward it to your machine. You can also use a service like [ngrok](https://ngrok.com/) to expose your local instance to the internet, which also allows you to use HTTPS. You can read more [here](https://discourse.openbullet.dev/t/your-openbullet-online/925).
+To allow other people to connect to your OpenBullet 2 instance, you can use a service like [ngrok](https://ngrok.com/) to expose your local instance to the internet, which also allows you to use HTTPS. You can read more [here](https://discourse.openbullet.dev/t/your-openbullet-online/925).
 :::
 
 :::warning WARNING

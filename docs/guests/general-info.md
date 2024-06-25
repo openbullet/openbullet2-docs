@@ -29,12 +29,8 @@ Guest users **WILL NOT** be able to
 You can navigate to the *Guests* tab and create a new guest, providing:
 - A username
 - A password
-- An access expiration date, after which no more authentication tokens will be generated for that guest
+- An access expiration date, after which the guest will no longer be able to perform any action
 - Optionally, the allowed IP addresses
-
-:::warning WARNING
-Even if you set an expiration date, the guest will still be able to use any authentication tokens that have already been generated until they expire. You can configure the token expiration time in the Settings > Security section, named *Guest session lifetime*.
-:::
 
 ## How to log in as a guest
 If you enabled the *Require admin login* setting, after you log out of the admin account (or open an incognito tab in your browser) you will be redirected to the login page. Here you can choose to log in as a guest by providing the guest username and password.

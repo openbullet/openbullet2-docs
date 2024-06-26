@@ -42,10 +42,20 @@ Finally, navigate to [http://localhost:5000](http://localhost:5000) using your f
 ### OpenBullet 2 closes immediately
 If the program closes immediately, it means that the [ASP.NET Core Runtime](https://aka.ms/dotnet/8.0/aspnetcore-runtime-win-x64.exe) was not installed correctly.
 
+### I'm on a 64-bit ARM Windows OS
+If you're on a 64-bit ARM Windows OS, follow these steps instead.
+1. Download the ARM64 version of the updater from [this link](https://github.com/openbullet/openbullet2/releases/latest/download/ob2-web-updater-win-arm64.exe).
+2. If you don't have it, download the [ASP.NET Core Runtime for win-arm64](https://aka.ms/dotnet/8.0/aspnetcore-runtime-win-arm64.exe) and install it.
+3. Holding down the SHIFT key on your keyboard, right click on an **empty** space inside the folder and select *Open PowerShell window here*
+4. Type the following command and press ENTER
+```bash
+dotnet ./OpenBullet2.Web.dll
+```
+
 ### I'm on a 32-bit Windows OS
 If you're still on a 32-bit Windows OS, follow these steps instead.
 1. Download the 32-bit version of the updater from [this link](https://github.com/openbullet/openbullet2/releases/latest/download/ob2-web-updater-win-x86.exe).
-2. If you don't have it, download the [ASP.NET Core Runtime](https://aka.ms/dotnet/8.0/aspnetcore-runtime-win-x86.exe) for 32-bit Windows and install it.
+2. If you don't have it, download the [ASP.NET Core Runtime for win-x86](https://aka.ms/dotnet/8.0/aspnetcore-runtime-win-x86.exe) for 32-bit Windows and install it.
 3. Holding down the SHIFT key on your keyboard, right click on an **empty** space inside the folder and select *Open PowerShell window here*
 4. Type the following command and press ENTER
 ```bash

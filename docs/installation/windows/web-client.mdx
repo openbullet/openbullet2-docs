@@ -15,6 +15,7 @@ If you're a Windows user, you have the ability to choose between the Web Client 
 
 ## Installation on Windows
 <OBDownloadButton fileName="ob2-web-updater-win-x64.exe">Web Updater (win-x64)</OBDownloadButton>&nbsp;&nbsp;
+<DotnetDownloadButton version="8.0" fileName="dotnet-runtime-win-x64.exe">.NET Runtime (win-x64)</DotnetDownloadButton>&nbsp;&nbsp;
 <DotnetDownloadButton version="8.0" fileName="aspnetcore-runtime-win-x64.exe">ASP.NET Core Runtime (win-x64)</DotnetDownloadButton>
 
 Move the updater to a new empty folder, then double-click it to run it.
@@ -27,7 +28,7 @@ Windows Defender might block the updater from running. If this happens, click on
 You could also directly download [**OpenBullet2.Web.zip**](https://github.com/openbullet/openbullet2/releases/latest/download/OpenBullet2.Web.zip), but the updater is recommended since it can be used to easily update your installation in the future.
 :::
 
-If you don't have the latest [ASP.NET Core Runtime](https://aka.ms/dotnet/8.0/aspnetcore-runtime-win-x64.exe) installed on your system, the updater will prompt you to install it. **This is required to run OpenBullet 2 (Web).**
+If you don't have the latest [.NET Runtime](https://aka.ms/dotnet/8.0/aspnetcore-runtime-win-x64.exe) and [ASP.NET Core Runtime](https://aka.ms/dotnet/8.0/aspnetcore-runtime-win-x64.exe) installed on your system, the updater will prompt you to install them. **This is required to run OpenBullet 2 (Web).**
 
 Once the updater is done downloading the latest version of OpenBullet 2, double-click on `OpenBullet2.Web.exe` to start it. A terminal window with colored text should appear. Wait until it prints the text you see in the picture below
 
@@ -44,8 +45,8 @@ If the program closes immediately, it means that the [ASP.NET Core Runtime](http
 
 ### I'm on a 64-bit ARM Windows OS
 If you're on a 64-bit ARM Windows OS, follow these steps instead.
-1. Download the ARM64 version of the updater from [this link](https://github.com/openbullet/openbullet2/releases/latest/download/ob2-web-updater-win-arm64.exe).
-2. If you don't have it, download the [ASP.NET Core Runtime for win-arm64](https://aka.ms/dotnet/8.0/aspnetcore-runtime-win-arm64.exe) and install it.
+1. Download the ARM64 version of the updater from [this link](https://github.com/openbullet/openbullet2/releases/latest/download/ob2-web-updater-win-arm64.exe) and run it.
+2. If you don't have it, download the [.NET Runtime for win-arm64](https://aka.ms/dotnet/8.0/dotnet-runtime-win-arm64.exe) and the [ASP.NET Core Runtime for win-arm64](https://aka.ms/dotnet/8.0/aspnetcore-runtime-win-arm64.exe) and install them.
 3. Holding down the SHIFT key on your keyboard, right click on an **empty** space inside the folder and select *Open PowerShell window here*
 4. Type the following command and press ENTER
 ```bash
@@ -55,7 +56,7 @@ dotnet ./OpenBullet2.Web.dll
 ### I'm on a 32-bit Windows OS
 If you're still on a 32-bit Windows OS, follow these steps instead.
 1. Download the 32-bit version of the updater from [this link](https://github.com/openbullet/openbullet2/releases/latest/download/ob2-web-updater-win-x86.exe).
-2. If you don't have it, download the [ASP.NET Core Runtime for win-x86](https://aka.ms/dotnet/8.0/aspnetcore-runtime-win-x86.exe) for 32-bit Windows and install it.
+2. If you don't have it, download the [.NET Runtime for win-x86](https://aka.ms/dotnet/8.0/aspnetcore-runtime-win-x86.exe) and the [ASP.NET Core Runtime for win-x86](https://aka.ms/dotnet/8.0/aspnetcore-runtime-win-x86.exe) for 32-bit Windows and install them.
 3. Holding down the SHIFT key on your keyboard, right click on an **empty** space inside the folder and select *Open PowerShell window here*
 4. Type the following command and press ENTER
 ```bash

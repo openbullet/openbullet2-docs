@@ -57,7 +57,11 @@ const config = {
 						position: "left",
 						label: "Docs",
 					},
-					// {to: '/blog', label: 'Blog', position: 'left'},
+					{
+						href: "https://github.com/openbullet/OB2Docs",
+						label: "Contribute",
+						position: "right",
+					},
 					{
 						href: "https://github.com/openbullet/OpenBullet2",
 						label: "GitHub",

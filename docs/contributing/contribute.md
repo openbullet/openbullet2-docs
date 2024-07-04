@@ -17,7 +17,7 @@ Please see the [documentation on issues](/docs/general/contributing/issues) for 
 
 ## Developing Code
 
-The entire project consists of a C# core server, an Angular web client. If you have experience with these languages, we're always grateful for any contributions you might want to make!
+The entire project consists of a .NET core solution (written in C#) for the web client's API, the native Windows WPF client, and the underlying libraries. In addition, for the web client, the frontend is written in TypeScript using Angular. If you have experience with these languages, we're always grateful for any contributions you might want to make!
 
 For general guidelines on how the project works, including how to set up your development copy, make changes, and guidelines on Pull Requests (PRs), please see the [documentation on contributing code](/docs/general/contributing/development). OpenBullet follows a "fork and PR" methodology; if you're not familiar with this, please see the [relevant section](/docs/general/contributing/development#set-up-your-copy-of-the-repo).
 

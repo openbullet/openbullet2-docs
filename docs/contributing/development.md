@@ -58,17 +58,17 @@ You will now be ready to begin building or modifying the project.
 
 Once you have your repository, you can get to work.
 
-1. Rebase your local branches against upstream `master` so you are working off the latest changes:
+1. Rebase your local branches against upstream `staging` so you are working off the latest changes:
 
    ```sh
    git fetch --all
-   git rebase upstream/master
+   git rebase upstream/staging
    ```
 
-1. Create a local feature branch off of `master` to make your changes:
+1. Create a local feature branch off of `staging` to make your changes:
 
    ```sh
-   git checkout -b my-feature master
+   git checkout -b my-feature staging
    ```
 
 1. Make your changes and commits to this local feature branch.
@@ -81,15 +81,15 @@ Once you have your repository, you can get to work.
    git push --set-upstream origin my-feature
    ```
 
-1. On GitHub, create a new PR against the upstream `master` branch following the advice below.
+1. On GitHub, create a new PR against the upstream `staging` branch following the advice below.
 
 1. Once your PR is merged, ensure you keep your local branches up-to-date:
 
    ```sh
    git fetch --all
-   git checkout master
-   git rebase upstream/master
-   git push -u origin master
+   git checkout staging
+   git rebase upstream/staging
+   git push -u origin staging
    ```
 
 1. Delete your local feature branch if you no longer need it:
@@ -106,13 +106,13 @@ If it's your first time contributing code to a particular repository, please add
 
 ### Feature Branches
 
-From time to time, major projects may come up that require multiple PRs and contributions from multiple people. For these tasks, feature branches specific to the feature should be created, based off of `master`. This helps allow the work to progress without breaking `master` for long periods and allowing those interested in that particular project the ability to work at their own pace instead of racing to fix a broken feature before the next release. To create a feature branch, please communicate with a Core team member and that can be arranged.
+From time to time, major projects may come up that require multiple PRs and contributions from multiple people. For these tasks, feature branches specific to the feature should be created, based off of `staging`. This helps allow the work to progress without breaking `master` for long periods and allowing those interested in that particular project the ability to work at their own pace instead of racing to fix a broken feature before the next release. To create a feature branch, please communicate with a Core team member and that can be arranged.
 
-Once the feature a feature branch was created for is ready, it can be merged in one shot into `master` and the feature branch removed.
+Once the feature, a feature branch was created for is ready, it can be merged in one shot into `staging` and the feature branch removed.
 
 ### The Master Branch
 
-The `master` branch is the primary face of the project and main development branch. Except for emergency release hotfixes, all PRs should target `master`. As a general rule, no PR should break master and all PRs should be tested before merging to ensure this does not occur. We're only human and this is still likely to happen, but you should generally be safe to build off of `master` if you want the latest and greatest version of OpenBullet2.
+The `master` branch is the primary face of the project and main branch. Except for emergency release hotfixes the `staging` development branch, all PRs should target `staging`. As a general rule, no PR should break master and all PRs should be tested before merging to ensure this does not occur. We're only human and this is still likely to happen, but you should generally be safe to build off of `stating` if you want the latest and greatest version of OpenBullet2.
 
 ## Testing a Pull Request
 
@@ -136,10 +136,10 @@ To test someone else's pull request, you must import the changes to your local r
    git checkout my-testing-branch
    ```
 
-1. Perform any testing or build required to test, then return to master and delete the branch:
+1. Perform any testing or build required to test, then return to staging and delete the branch:
 
    ```sh
-   git checkout master
+   git checkout staging
    git branch -D my-testing-branch
    ```
 
@@ -173,7 +173,7 @@ Run each command on a separate line. The container we'll test in is named `obtes
 
 :::
 
-### Master Branch
+### Staging Branch
 
 ```sh
 (TODO)
@@ -181,7 +181,7 @@ Run each command on a separate line. The container we'll test in is named `obtes
 
 ### Pull Request
 
-First, complete the steps above to setup your container to build the master branch.
+First, complete the steps above to setup your container to build the staging branch.
 
 :::note
 

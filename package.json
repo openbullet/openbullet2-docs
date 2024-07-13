@@ -15,7 +15,8 @@
 	},
 	"dependencies": {
 		"@docusaurus/core": "^3.2.1",
-		"@docusaurus/preset-classic": "^3.2.1",
+		"@docusaurus/preset-classic": "^3.4.0",
+		"@easyops-cn/docusaurus-search-local": "^0.44.3",
 		"@mdx-js/react": "^3.0.1",
 		"clsx": "^2.1.1",
 		"prism-react-renderer": "^2.3.1",
@@ -23,7 +24,11 @@
 		"react-dom": "^18.3.1"
 	},
 	"browserslist": {
-		"production": [">0.5%", "not dead", "not op_mini all"],
+		"production": [
+			">0.5%",
+			"not dead",
+			"not op_mini all"
+		],
 		"development": [
 			"last 1 chrome version",
 			"last 1 firefox version",

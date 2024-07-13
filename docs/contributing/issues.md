@@ -53,8 +53,24 @@ OpenBullet features a number of issue labels to assist in triaging and managing 
 
 These labels are broad categories for which part of the codebase is affected.
 
-- `backend`: An issue that mainly relates to the server backend code.
-- `build`: An issue that mainly relates to the build process.
+- `area:backend`: An issue that mainly relates to the server backend code.
+- `area:frontend`: An issue that mainly relates to the server frontend code.
+- `area:deployment`: An issue that mainly relates to the build process.
+- `area:tooling`: An issue that mainly relates to the tooling and test code.
+
+### Libraries
+
+These labels determine on which library, an issue is related.
+
+- `lib:core`: An issue related to the core library.
+- `lib:rurilib`: An issue related to the rurilib library.
+
+### Client
+
+These labels determine on which client, an issue is related.
+
+- `client:native`: An issue that appears on native client.
+- `client:web`: An issue that appears on web client.
 
 ### Criticality
 
@@ -67,10 +83,9 @@ These labels help determine how critical an issue is.
 
 These labels help assist in managing the project and direction.
 
+- `enchancement`: A new feature or request.
 - `good first issue`: Something that should be very straightforward to do and is a great place to get started.
 - `help wanted`: An issue that currently has no clear expert within the project and could use outside assistance.
-- `roadmap`: A meta-issue related to the future roadmap of the project.
-- `investigation`: An investigation-type issue into the codebase.
 
 ### Pull Requests
 

@@ -65,25 +65,25 @@ Once you have your repository, you can get to work.
    git rebase upstream/staging
    ```
 
-1. Create a local feature branch off of `staging` to make your changes:
+2. Create a local feature branch off of `staging` to make your changes:
 
    ```sh
    git checkout -b my-feature staging
    ```
 
-1. Make your changes and commits to this local feature branch.
+3. Make your changes and commits to this local feature branch.
 
-1. Repeat step 1 on your local feature branch once you're done your work, to ensure you have no conflicts with other work done since you stated.
+4. Repeat step 1 on your local feature branch once you're done your work, to ensure you have no conflicts with other work done since you stated.
 
-1. Push up your local feature branch to your GitHub fork:
+5. Push up your local feature branch to your GitHub fork:
 
    ```sh
    git push --set-upstream origin my-feature
    ```
 
-1. On GitHub, create a new PR against the upstream `staging` branch following the advice below.
+6. On GitHub, create a new PR against the upstream `staging` branch following the advice below.
 
-1. Once your PR is merged, ensure you keep your local branches up-to-date:
+7. Once your PR is merged, ensure you keep your local branches up-to-date:
 
    ```sh
    git fetch --all
@@ -92,7 +92,7 @@ Once you have your repository, you can get to work.
    git push -u origin staging
    ```
 
-1. Delete your local feature branch if you no longer need it:
+8. Delete your local feature branch if you no longer need it:
 
    ```sh
    git branch -d my-feature
@@ -162,16 +162,6 @@ When submitting a new PR, please ensure you do the following things. If you have
 - Avoid rebasing and force-pushing to large or complex pull requests if at all possible, and especially after reviews. It forces unnecessary reviews to verify the changes are still okay and build properly.
 
 - Expect review and discussion. If you cannot back up your changes with a good description and through review, please reconsider whether it should be done at all. All PRs to `dev` require at least one approving review from an administrative team member, however we welcome and encourage reviews from any contributor, especially if it is in an area you are knowledgeable about. More eyes are always better.
-
-## Building and Testing Inside a Docker Container
-
-We need to install all development dependencies and pull down the code inside the container before we can compile and run.
-
-:::note
-
-Run each command on a separate line. The container we'll test in is named `obtest`. Within Docker, anytime the entrypoint executable is terminated, the session restarts, so just exec into it again to continue. This is also why we explicitly kill it to reload the new version.
-
-:::
 
 ### Staging Branch
 

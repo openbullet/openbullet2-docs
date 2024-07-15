@@ -7,7 +7,7 @@ sidebar_position: 5
 The `globals` variable contains data shared across all bots in a multi-run job. It can be used to store data that needs to be shared between bots, such as authentication tokens, counters, or other shared state.
 
 :::info NOTE
-The `globals` variable is the only one that is available in the [startup script](../lolicode/startup_script.md)'s code. This allows you to set up shared resources and state before the bots start running.
+The `globals` variable is the only one that is available in the [startup script](../lolicode/startup-script.md)'s code. This allows you to set up shared resources and state before the bots start running.
 :::
 
 

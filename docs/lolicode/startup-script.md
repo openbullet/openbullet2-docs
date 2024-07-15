@@ -16,4 +16,4 @@ In the startup script, you can use regular LoliCode and C# code to set up shared
 
 The startup script can be toggled on or off through a button just above the main script. If you turn it off, the main script will start running immediately without executing the startup script.
 
-![Startup script](/img/lolicode/startup_script.png)
+![Startup script](/img/lolicode/startup-script.png)

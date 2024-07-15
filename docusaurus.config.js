@@ -40,6 +40,15 @@ const config = {
 			}),
 		],
 	],
+	
+	plugins: [
+		[
+			require.resolve("@easyops-cn/docusaurus-search-local"),
+			({
+			  hashed: true,
+			}),
+		],
+	],
 
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -52,13 +61,7 @@ const config = {
 				},
 				items: [
 					{
-						type: "doc",
-						docId: "intro",
-						position: "left",
-						label: "Docs",
-					},
-					{
-						href: "https://github.com/openbullet/OB2Docs",
+						href: "https://github.com/openbullet/openbullet2-docs",
 						label: "Contribute",
 						position: "right",
 					},

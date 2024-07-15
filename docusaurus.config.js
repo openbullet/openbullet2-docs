@@ -28,25 +28,19 @@ const config = {
 					editUrl:
 						"https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
 				},
-				blog: {
-					showReadingTime: true,
-					// Please change this to your repo.
-					editUrl:
-						"https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-				},
 				theme: {
 					customCss: require.resolve("./src/css/custom.css"),
 				},
 			}),
 		],
 	],
-	
+
 	plugins: [
 		[
 			require.resolve("@easyops-cn/docusaurus-search-local"),
-			({
-			  hashed: true,
-			}),
+			{
+				hashed: true,
+			},
 		],
 	],
 

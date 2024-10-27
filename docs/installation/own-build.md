@@ -12,6 +12,7 @@ If you don't trust the official release builds hosted on GitHub, or if you want 
 Install the following
 - [git](https://git-scm.com/downloads)
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [Node.js 20](https://nodejs.org/en/download/) (for the web client only)
 
 :::info Info
 Make sure to install the .NET 8 SDK and not the Runtime.
@@ -36,10 +37,34 @@ and compile OB2 using
 dotnet publish --configuration Release
 ```
 
+Navigate to the `openbullet2-web-client` folder
+
+```bash
+cd ../openbullet2-web-client
+```
+
+Then install the required npm packages using
+
+```bash
+npm install
+```
+
+and finally build the web client using
+
+```bash
+npm run build
+```
+
+Copy the contents of the `dist` folder to the `OpenBullet2/OpenBullet2.Web/bin/Release/net8.0/publish/wwwroot` folder
+
+```bash
+cp -r dist/* ../OpenBullet2.Web/bin/Release/net8.0/publish/wwwroot
+```
+
 you can then navigate to the publish folder and start OB2 with the usual command
 
 ```bash
-cd bin/Release/net8.0/publish
+cd ../OpenBullet2.Web/bin/Release/net8.0/publish
 dotnet ./OpenBullet2.Web.dll
 ```
 

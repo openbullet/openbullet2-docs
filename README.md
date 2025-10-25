@@ -1,4 +1,5 @@
 # OpenBullet 2 - Docs
+Documentation site for [OpenBullet 2](https://github.com/openbullet/OpenBullet2).
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Local Development

@@ -15,12 +15,12 @@ If OpenBullet 2 already depends on a specific library, for example `Newtonsoft.J
 
 ### How to get the `.dll` file
 To get the `.dll` file of a library:
-1. Install the .NET 8 SDK.
+1. Install the .NET 10 SDK.
 2. Create an empty folder, for example `TestConsoleApp`, then open a terminal in that folder.
-3. Create a .NET 8 console application using `dotnet new console`.
+3. Create a .NET 10 console application using `dotnet new console`.
 4. Add the library to the project using `dotnet add package <library-name>`. For example, to add the `Humanizer` library, you would write `dotnet add package Humanizer`.
 5. Build the project using `dotnet build`.
-6. Navigate to the `bin/Debug/net8.0` folder and copy the `.dll` file of the library, and any dependencies, to the `UserData/Plugins` folder of OpenBullet 2.
+6. Navigate to the `bin/Debug/net10.0` folder and copy the `.dll` file of the library, and any dependencies, to the `UserData/Plugins` folder of OpenBullet 2.
 7. Restart OpenBullet 2.
 
 ## Using a library

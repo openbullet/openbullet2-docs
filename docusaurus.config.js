@@ -9,7 +9,7 @@ const darkCodeTheme = themes.dracula;
 const config = {
 	title: "OpenBullet 2",
 	tagline: "Documentation site",
-	url: "https://openbullet.github.io",
+	url: "https://docs.openbullet.dev",
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",

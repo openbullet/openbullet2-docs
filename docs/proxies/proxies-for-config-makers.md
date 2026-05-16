@@ -54,6 +54,17 @@ You can use a proxy while debugging a config by setting up the test proxy like i
 
 ![Proxy options in the debugger](/img/proxies/debugger-options.png)
 
+The test proxy accepts the same string syntax used by the `Proxy.Parse(...)` method. Common accepted forms are:
+
+```text
+127.0.0.1:8000
+127.0.0.1:8000:username:password
+(socks5)127.0.0.1:8000
+(http)127.0.0.1:8000:username:password
+```
+
+If the proxy string does **not** include a type prefix like `(http)` or `(socks5)`, the debugger will use the selected *Proxy Type* field as the default type. If the string includes the prefix, that explicit type is used instead.
+
 ### In LoliCode / C#
 | Property | Type | Notes |
 |:-------------|:-----|:------|

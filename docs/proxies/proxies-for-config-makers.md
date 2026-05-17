@@ -61,9 +61,16 @@ The test proxy accepts the same string syntax used by the `Proxy.Parse(...)` met
 127.0.0.1:8000:username:password
 (socks5)127.0.0.1:8000
 (http)127.0.0.1:8000:username:password
+http://127.0.0.1:8000
+https://username:password@127.0.0.1:8000
+socks4://127.0.0.1:8000
+socks4a://127.0.0.1:8000
+socks5://username:password@127.0.0.1:8000
 ```
 
 If the proxy string does **not** include a type prefix like `(http)` or `(socks5)`, the debugger will use the selected *Proxy Type* field as the default type. If the string includes the prefix, that explicit type is used instead.
+
+For URI-style proxy strings, the scheme defines the type directly. `https://...` is accepted and is treated like an HTTP proxy.
 
 ### In LoliCode / C#
 | Property | Type | Notes |

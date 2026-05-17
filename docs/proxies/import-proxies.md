@@ -23,12 +23,12 @@ There are 3 ways to import proxies in OpenBullet 2. You can add them:
 
 When using any of these sources, there need to be only **one proxy per line**.
 
-When adding proxies, you need to either use the *advanced syntax* that OpenBullet 2 uses to recognize the proxy information, or specify the default values that will be used if not specified.
+When adding proxies, you need to either use the legacy *advanced syntax* that OpenBullet 2 recognizes, use standard URI-style proxy strings, or specify the default values that will be used if not specified.
 
 ![Default values](/img/proxies/proxy-defaults.png)
 
 ### Proxy syntax
-The advanced proxy syntax is
+The legacy advanced proxy syntax is
 
 ```text
 (type)host:port:username:password
@@ -47,6 +47,18 @@ Note that a proxy does not need to have all these values. For example, you can j
 127.0.0.1:8080
 ```
 :::
+
+You can also use standard URI-style proxy strings, for example:
+
+```text
+http://127.0.0.1:8080
+https://myuser:mypass@127.0.0.1:8080
+socks4://127.0.0.1:9050
+socks4a://127.0.0.1:9050
+socks5://myuser:mypass@127.0.0.1:9050
+```
+
+In URI-style syntax, the scheme defines the proxy type directly. `https://...` is accepted and treated like an HTTP proxy.
 
 ### Final result
 This is the result after importing the SOCKS 5 freebies from [proxyscrape.com](https://proxyscrape.com)

@@ -50,7 +50,7 @@ This setting determines the length of time a banned proxy will remain banned. Th
 #### Proxy sources
 These sources supply the proxies that populate the Proxy Pool, which in turn distributes them to the bots. There are three types of proxy sources:
 
-- 📦 **Group** utilizes one of the proxy groups configured in the *Proxies* section of OpenBullet 2. This allows you to leverage the [proxy checking](./check-proxies.md) feature, which removes non-functional proxies beforehand
+- 📦 **Group** utilizes one of the proxy groups configured in the *Proxies* section of OpenBullet 2. This allows you to leverage the [proxy checking](./check-proxies.md) feature, which can remove non-functional, slow, or low-quality proxies beforehand
 - 📁 **File** draws proxies from a file on your local filesystem. When proxies are reloaded, the file is read, and proxies are parsed from it, one per line, in the standard proxy syntax
 - 🌐 **Remote** retrieves proxies from a remote endpoint. OpenBullet 2 sends a GET request to the endpoint, expecting a list of proxies in response, one per line, in the standard proxy syntax
 

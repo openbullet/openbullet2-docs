@@ -33,19 +33,21 @@ Each proxy in OpenBullet 2 has a specific type that is needed to know which prot
 
 After the connection, a raw TCP stream will be opened between you and the proxy, and the proxy will deliver all the traffic sent on that stream to the destination host on your behalf.
 
-### Anonimity
-Proxy servers can be identified with 3 levels of anonimity
+### Anonymity
+Proxy servers can be identified with 3 main levels of anonymity.
 
-#### Transparent proxies ⛔️
-These proxies do not hide your IP address, which is forwarded to the destination host through the `X-Forwarded-For` header. Avoid these proxies if you plan on hiding your IP address.
+#### Transparent proxies ⛔
+These proxies do not hide your IP address, which is forwarded to the destination host through headers such as `X-Forwarded-For`. Avoid these proxies if you plan on hiding your IP address.
 
 #### Anonymous proxies ⚠️
-These proxies hide your IP address but don't hide the fact that the connection is being made via a proxy, thanks to the proxy's IP address being passed in the `Via` header of the request.
+These proxies hide your IP address but do not hide the fact that the connection is being made through a proxy, for example by adding headers such as `Via`.
 
-#### Elite proxies ✔️
-These proxies provide the best anonimity level, by hiding your IP address and not revealing that you're using a proxy.
+#### Elite proxies ✅
+These proxies provide the best anonymity level by hiding your IP address and not revealing that you are using a proxy.
 
-To check the anonimity level of a proxy, a *proxy judge* can be used. It is not possible to use a judge when checking proxies through OpenBullet 2 yet.
+To check the anonymity level of a proxy, a *proxy judge* can be used. OpenBullet 2 supports this during proxy checking through a list of configurable `azenv.php`-compatible judges. When judge support is enabled in a Proxy Check Job, OpenBullet 2 tries the configured judges in order until one responds, then classifies the proxy as `Transparent`, `Anonymous`, or `Elite`.
+
+If none of the configured judges works, or if the response cannot be classified, the proxy quality is set to `Unknown`.
 
 ### Datacenter proxies 🏢 vs Residential proxies 🏠
 Not all IP addresses are born equal. If a proxy server is hosted inside a datacenter, its IP address will most likely be within a range that is well-known to be that of a service provider, hence making it more likely to be detected as a proxy.
@@ -66,7 +68,7 @@ OpenBullet 2 supports these proxies, but **you need to tick these options when y
 :::
 
 ### Where to get them
-There are a few places to get **free** proxies, although you should not expect a great quality in terms of ping, reliability and anonimity. The most popular place to get free proxies from is [proxyscrape.com](https://proxyscrape.com/). After downloading free proxies, it is always good practice to check them with a proxy checker.
+There are a few places to get **free** proxies, although you should not expect a great quality in terms of ping, reliability and anonymity. The most popular place to get free proxies from is [proxyscrape.com](https://proxyscrape.com/). After downloading free proxies, it is always good practice to check them with a proxy checker.
 
 :::info INFO
 OpenBullet 2 has a built-in proxy checker, check out the [proxy check guide](./check-proxies.md).

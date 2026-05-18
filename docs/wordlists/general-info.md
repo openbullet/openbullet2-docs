@@ -15,7 +15,7 @@ There are multiple types of data lines that you can use with OpenBullet 2. For e
 Inside the `UserData` folder of OpenBullet 2, you will find a file called `Environment.ini`. This file contains the specification of some core components of OpenBullet 2, such as *wordlist types*, *custom statuses* and *export formats*.
 
 #### Wordlist Type syntax
-Each wordlist type is defined with this syntax
+Each wordlist type is defined with this syntax:
 
 ```ini title="Environment.ini"
 [WORDLIST TYPE]
@@ -28,7 +28,7 @@ Slices=DATA
 
 `Regex` is the regular expression to check that a data line in the wordlist is valid. This is regulated by the `Verify` field. If set to `True`, each line of the wordlist will be checked with the regular expression before being assigned to a bot, and if the regular expression does not find any match, the line will be marked as *INVALID* by the Multi Run Job.
 
-The `Separator` field can be used to specify a character that will be used when slicing a data line into multiple variables (this is not required). Finally, the `Slices` field will take a list of comma separated variable names that the slices will have, after splitting the data line by the separating character.
+The `Separator` field can be used to specify a character that will be used when slicing a data line into multiple variables (this is not required). Finally, the `Slices` field will take a list of comma-separated variable names that the slices will have after splitting the data line by the separator character.
 
 :::info INFO
 For example, if a Wordlist Type has the following configuration:

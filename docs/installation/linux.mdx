@@ -13,7 +13,7 @@ If you're a Linux user, you can only use the Web Client.
 ## Installation on Linux
 First of all, download and install the .NET Runtime and ASP.NET Core Runtime by following [these instructions](https://docs.microsoft.com/en-us/dotnet/core/install/linux).
 
-Next, download the right updater for your platform and place it in an empty folder in your file system.
+Next, download the correct updater for your platform and place it in an empty folder in your file system.
 
 <OBDownloadButton fileName="ob2-web-updater-linux-x64">Web Updater (x64)</OBDownloadButton>&nbsp;&nbsp;<OBDownloadButton fileName="ob2-web-updater-linux-arm64">Web Updater (arm64)</OBDownloadButton>
 
@@ -38,12 +38,12 @@ You could also directly download [**OpenBullet2.Web.zip**](https://github.com/op
     </TabItem>
 </Tabs>
 
-Once the updater is done downloading the latest version of OpenBullet 2, execute this command to start the application
+Once the updater has finished downloading the latest version of OpenBullet 2, execute this command to start the application:
 ```bash
 dotnet ./OpenBullet2.Web.dll
 ```
 
-Wait until it prints the text you see in the picture below
+Wait until it prints the text you see in the picture below.
 
 ![Terminal Window](/img/installation/web-client/windows-terminal.png)
 
@@ -54,7 +54,7 @@ Finally, navigate to [http://localhost:5000](http://localhost:5000) using your f
 ## Troubleshooting
 
 ### I'm on a Linux server without a GUI
-If you're on a **Linux Server (x64)** and only have access to the command line, then you can use these commands instead
+If you're on a **Linux server (x64)** and only have access to the command line, you can use these commands instead:
 ```bash
 sudo apt install -y wget
 wget https://github.com/openbullet/openbullet2/releases/latest/download/ob2-web-updater-linux-x64

@@ -12,7 +12,7 @@ You can test and enable the hit sound in the `Settings` tab, in the `Customizati
 ![Sounds](/img/customization/web-customization.png)
 
 ### Using custom sounds
-Simply change the `wwwroot/assets/sounds/hit.wav` file with your own sound file. The file must be a `.wav` file and have the same name as the original one. You may need to refresh the page for the changes to take effect.
+Simply replace the `wwwroot/assets/sounds/hit.wav` file with your own sound file. The file must be a `.wav` file and have the same name as the original one. You may need to refresh the page for the changes to take effect.
 
 ## Native client
 You can test and enable the hit sound in the `OB Settings` tab, in the `Customization` section.
@@ -20,4 +20,4 @@ You can test and enable the hit sound in the `OB Settings` tab, in the `Customiz
 ![Sounds](/img/customization/native-customization.png)
 
 ### Using custom sounds
-Simply change the `Sounds/hit.wav` file with your own sound file. The file must be a `.wav` file and have the same name as the original one. You may need to restart the application for the changes to take effect.
+Simply replace the `Sounds/hit.wav` file with your own sound file. The file must be a `.wav` file and have the same name as the original one. You may need to restart the application for the changes to take effect.

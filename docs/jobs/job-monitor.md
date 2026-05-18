@@ -20,7 +20,7 @@ Other common use cases include:
 - aborting a job if there are too many bans/errors
 - decreasing the number of bots if the CPM is too high
 - pausing a job if the captcha credit runs out
-- sending a message on discord when the job is at 50% progress
+- sending a message on Discord when the job is at 50% progress
 - and many more...
 
 :::info INFO

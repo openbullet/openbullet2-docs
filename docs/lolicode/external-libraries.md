@@ -4,7 +4,7 @@ sidebar_position: 9
 ---
 
 # External Libraries
-OpenBullet 2 allows you to use external C# libraries in your LoliCode script. This is useful when you need to perform operations that are not supported by LoliCode, but you found a NuGet package that does what you need.
+OpenBullet 2 allows you to use external C# libraries in your LoliCode script. This is useful when you need to perform operations that are not supported by LoliCode, but have found a NuGet package that does what you need.
 
 ## Adding a library
 External libraries make use of the Plugin system to be loaded into the program. To add a library, you simply need to place the `.dll` file (and any dependencies) in the `Plugins` folder of the OpenBullet 2 directory. The program will automatically load the library when it starts.
@@ -20,7 +20,7 @@ To get the `.dll` file of a library:
 3. Create a .NET 10 console application using `dotnet new console`.
 4. Add the library to the project using `dotnet add package <library-name>`. For example, to add the `Humanizer` library, you would write `dotnet add package Humanizer`.
 5. Build the project using `dotnet build`.
-6. Navigate to the `bin/Debug/net10.0` folder and copy the `.dll` file of the library, and any dependencies, to the `UserData/Plugins` folder of OpenBullet 2.
+6. Navigate to the `bin/Debug/net10.0` folder and copy the `.dll` file of the library, along with any dependencies, to the `UserData/Plugins` folder of OpenBullet 2.
 7. Restart OpenBullet 2.
 
 ## Using a library

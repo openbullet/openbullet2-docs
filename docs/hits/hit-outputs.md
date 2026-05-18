@@ -27,7 +27,7 @@ If the folder does not exist, it will be automatically created. Hits are stored 
 Hits will be sent to a Discord Webhook URL of your choice. You can also specify the username and avatar that the bot will use.
 
 ### Telegram
-Just like for discord, hits will be sent to a Telegram chat via a bot. You just need the bot token and the chat id.
+Just like for Discord, hits will be sent to a Telegram chat via a bot. You just need the bot token and the chat ID.
 
 ### Custom Webhook
 If you want to implement a custom sink for your hits, you can use this custom webhook. Hits will be sent to this hook via a POST request with an `application/json` payload such as:

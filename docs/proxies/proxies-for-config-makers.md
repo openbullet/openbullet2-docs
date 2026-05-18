@@ -29,7 +29,7 @@ In the settings of a Config, you can also specify some options related to the us
 ![Config proxy settings](/img/proxies/config-proxy-settings.png)
 
 #### Use proxies
-By ticking the *Use proxies* option, you will configure the config's default setting that regulates whether to use proxies or not. Mind that this can be overridden by the job's *Proxy Mode* setting, so this is simply a suggestion that you make to the final user of the Config.
+By ticking the *Use proxies* option, you will configure the config's default setting that regulates whether to use proxies or not. Keep in mind that this can be overridden by the job's *Proxy Mode* setting, so this is simply a suggestion that you make to the final user of the config.
 
 #### Maximum uses per proxy
 This option manages how many times a proxy can be used before it's automatically banned. Use this if the site only allows a set number of attempts before it bans an IP address. If the value is set to 0, the feature is disabled.
@@ -47,10 +47,10 @@ It is advisable to set the *ban loop evasion* value to a relatively high number 
 Here you can configure for which end statuses of a bot a proxy should be banned. Normally, you would want to ban a proxy if the bot ends with a `BAN` or `ERROR` status, but sometimes you might want to also ban it when a hit is found (e.g., a `SUCCESS` status), to make sure the IP that originally found the hit is not used for other hits.
 
 #### Allowed proxy types
-If for any reason you only want to support a subset of proxy types (e.g., because the config uses blocks that only work with HTTP proxies) you can specify them through this setting.
+If for any reason you only want to support a subset of proxy types (e.g., because the config uses blocks that only work with HTTP proxies), you can specify them through this setting.
 
 ### In the Debugger
-You can use a proxy while debugging a config by setting up the test proxy like in the following image.
+You can use a proxy while debugging a config by setting up the test proxy as shown in the following image.
 
 ![Proxy options in the debugger](/img/proxies/debugger-options.png)
 
@@ -93,7 +93,7 @@ The `data.Proxy` property provides information about the proxy that is currently
 | `data.Proxy.Ping` | int | in milliseconds, 0 if untested |
 | `data.Proxy.LastUsed` | DateTime | the last time the proxy was used by a bot |
 | `data.Proxy.LastChecked` | DateTime | when the proxy was last checked |
-| `data.Proxy.LastBanned` | DateTIme | when the proxy was last banned |
+| `data.Proxy.LastBanned` | DateTime | when the proxy was last banned |
 | `data.Proxy.TotalUses` | int | the number of times the proxy was used in the current run |
 | `data.Proxy.BeingUsedBy` | int | the number of bots that are currently borrowing the proxy from the pool (can be greater than 1 if *concurrent proxy mode* is enabled) |
 | `data.Proxy.ProxyStatus` | ProxyStatus | enum (Available, Busy, Bad, Banned) |

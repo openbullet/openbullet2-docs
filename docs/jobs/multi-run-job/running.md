@@ -11,11 +11,11 @@ For this guide, you will need to create a Multi Run Job by going to the *Jobs* t
 - 5 bots
 - data pool: range from 0 to 100 with step 1, Default wordlist type
 
-Leave everything else default. Your options need to look like these:
+Leave everything else at the default settings. Your options need to look like these:
 
 ![Sample settings](/img/jobs/multi-run-job/sample-settings.png)
 
-Finally, click on the *Create Job* button. At this point, you should see something like this
+Finally, click on the *Create Job* button. At this point, you should see something like this:
 
 ![Multi Run Job Viewer (idle)](/img/jobs/multi-run-job/viewer-idle.png)
 
@@ -24,7 +24,7 @@ In the *Job options* section, you can see most of the options that you previousl
 - Change the number of bots (also while running)
 - Start the job
 
-If you click on *Start* you will see the progress bar filling up, the logs being printed and some hits being obtained
+If you click on *Start*, you will see the progress bar filling up, the logs being printed, and some hits being obtained.
 
 ![Multi Run Job (running)](/img/jobs/multi-run-job/viewer-running.png)
 
@@ -64,9 +64,9 @@ If you want to run the job again, you will need to rewind the *skip* value to th
 |**Progress**       |The overall progress of the check (includes the *skip*)|
 
 ### Controls
-During the run, you are able to
-- **Pause** the job and resume it later. When you click pause, the job waits until all bots finished processing their assigned items before going into a paused state
-- **Stop** the job. When you click stop, the job waits until all bots finished processing their assigned items before going into an idle state
+During the run, you can:
+- **Pause** the job and resume it later. When you click pause, the job waits until all bots have finished processing their assigned items before going into a paused state
+- **Stop** the job. When you click stop, the job waits until all bots have finished processing their assigned items before going into an idle state
 - **Abort** the job. When you click abort, the job will abruptly terminate all bots and you might lose the outcome of the ongoing checks
 
 :::info INFO
@@ -87,7 +87,7 @@ You can select more than one hit by using the CTRL or SHIFT keys on your keyboar
 You are also able to *send* the hit (along with the proxy and wordlist type) to the *debugger*, and *show the full log* of the hit. The full log is only saved if you enable this option in the *RL Settings* section. Also, bot logs are only available to the admin user.
 
 :::caution WARNING
-Bot logs can be huge and eat up a lot of your RAM, so only enable them while debugging a config (for example to check why something ended up as *To check* instead of another result). Do not leave it enabled while checking a high amount of data lines, otherwise you will run into memory issues.
+Bot logs can be huge and eat up a lot of your RAM, so only enable them while debugging a config (for example to check why something ended up as *To check* instead of another result). Do not leave them enabled while checking a large number of data lines, otherwise you will run into memory issues.
 :::
 
 ![Bot log](/img/jobs/multi-run-job/bot-log.png)

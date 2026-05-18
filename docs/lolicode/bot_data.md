@@ -11,17 +11,17 @@ This variable contains all data related to the current bot.
 | -------- | ---- | ----------- |
 | `data.UseProxy` | `bool` | Whether to use the proxy assigned to the bot |
 | `data.STATUS` | `string` | The current status of the bot |
-| `data.RAWSOURCE` | `byte[]` | The content of the last http response received |
+| `data.RAWSOURCE` | `byte[]` | The content of the last HTTP response received |
 | `data.SOURCE` | `string` | Same as above but as a string |
 | `data.ERROR` | `string` | Contains the message of the last exception caught when using safe mode (in blocks that support it) |
-| `data.ADDRESS` | `string` | The absolute uri of the last http response (after redirection) |
-| `data.RESPONSECODE` | `int` | The status code of the last http response |
+| `data.ADDRESS` | `string` | The absolute URI of the last HTTP response (after redirection) |
+| `data.RESPONSECODE` | `int` | The status code of the last HTTP response |
 | `data.COOKIES` | `Dictionary<string, string>` | The cookies sent or received so far (e.g. `data.COOKIES["PHPSESSID"]`) |
-| `data.HEADERS` | `Dictionary<string, string>` | The headers of the last http response (e.g. `data.HEADERS["Location"]`) |
+| `data.HEADERS` | `Dictionary<string, string>` | The headers of the last HTTP response (e.g. `data.HEADERS["Location"]`) |
 | `data.Objects` | `Dictionary<string, object>` | Holds stateful objects for cross-block use (they will get disposed automatically at the end of the script) |
 | `data.MarkedForCapture` | `List<string>` | All the names of variables marked for capture |
 | `data.CaptchaCredit` | `decimal` | The captcha credits that are left |
-| `data.BOTNUM` | `int` | The number of the bot (0 for debugger, 1... for bots in a multi run job) |
+| `data.BOTNUM` | `int` | The number of the bot (0 for the debugger, 1... for bots in a Multi Run Job) |
 
 ### Line
 | Property | Type | Description |

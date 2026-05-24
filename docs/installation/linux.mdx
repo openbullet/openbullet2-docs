@@ -11,14 +11,12 @@ import OBDownloadButton from '@site/src/components/OBDownloadButton';
 If you're a Linux user, you can only use the Web Client.
 
 ## Installation on Linux
-First of all, download and install the .NET Runtime and ASP.NET Core Runtime by following [these instructions](https://docs.microsoft.com/en-us/dotnet/core/install/linux).
-
-Next, download the correct updater for your platform and place it in an empty folder in your file system.
+Download the correct updater for your platform and place it in an empty folder in your file system.
 
 <OBDownloadButton fileName="ob2-web-updater-linux-x64">Web Updater (x64)</OBDownloadButton>&nbsp;&nbsp;<OBDownloadButton fileName="ob2-web-updater-linux-arm64">Web Updater (arm64)</OBDownloadButton>
 
 :::info Info
-You could also directly download [**OpenBullet2.Web.zip**](https://github.com/openbullet/openbullet2/releases/latest/download/OpenBullet2.Web.zip), but the updater is recommended since it can be used to easily update your installation in the future.
+You could also directly download [**OpenBullet2.Web-linux-x64.zip**](https://github.com/openbullet/openbullet2/releases/latest/download/OpenBullet2.Web-linux-x64.zip) or [**OpenBullet2.Web-linux-arm64.zip**](https://github.com/openbullet/openbullet2/releases/latest/download/OpenBullet2.Web-linux-arm64.zip), but the updater is recommended since it can be used to easily update your installation in the future.
 :::
 
 <Tabs>
@@ -40,7 +38,8 @@ You could also directly download [**OpenBullet2.Web.zip**](https://github.com/op
 
 Once the updater has finished downloading the latest version of OpenBullet 2, execute this command to start the application:
 ```bash
-dotnet ./OpenBullet2.Web.dll
+chmod +x ./OpenBullet2.Web
+./OpenBullet2.Web
 ```
 
 Wait until it prints the text you see in the picture below.
@@ -60,7 +59,8 @@ sudo apt install -y wget
 wget https://github.com/openbullet/openbullet2/releases/latest/download/ob2-web-updater-linux-x64
 chmod +x ./ob2-web-updater-linux-x64
 ./ob2-web-updater-linux-x64
-dotnet ./OpenBullet2.Web.dll
+chmod +x ./OpenBullet2.Web
+./OpenBullet2.Web
 ```
 
 Replace `x64` with `arm64` in the commands above if you're on an ARM64 system.

@@ -15,11 +15,9 @@ If you click on it, you will see a changelog with the latest changes and a butto
 ## How to update
 First of all, completely terminate OpenBullet 2's process. Note that this does not mean simply closing the tab in your browser, but exiting the console application that first opens when you start OpenBullet 2.
 
-To update, simply navigate into the main folder of OpenBullet 2 and double-click on `ob2-updater-web-win-x64.exe` to run the updater.
+To update, simply navigate into the main folder of OpenBullet 2 and double-click on `ob2-web-updater-win-x64.exe` to run the updater.
 
-:::caution Warning
-If you're still on a 32-bit Windows OS, use `ob2-updater-web-win-x86.exe` instead.
-:::
+If you're on Windows ARM64, use `ob2-web-updater-win-arm64.exe` instead.
 
 The updater will guide you through the process of updating the Web Client.
 

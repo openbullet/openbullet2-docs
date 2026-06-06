@@ -9,29 +9,29 @@ sidebar_position: 5
 If you don't trust the official release builds hosted on GitHub, or if you want to make some modifications to the [source code](https://github.com/openbullet/OpenBullet2/) of OpenBullet 2, you might want to compile your own build instead of using a premade one.
 
 ## Prerequisites
-Install the following
+Install the following:
 - [git](https://git-scm.com/downloads)
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
 - [Node.js 20](https://nodejs.org/en/download/) (for the web client only)
 
 :::info Info
-Make sure to install the .NET 8 SDK and not the Runtime.
+Make sure to install the .NET 10 SDK and not the Runtime.
 :::
 
 ## Building the Web Client from its source code
-Open your favourite terminal (or git bash) and run
+Open your favorite terminal (or Git Bash) and run:
 
 ```bash
 git clone https://github.com/openbullet/OpenBullet2/
 ```
 
-now cd into the folder where `OpenBullet2.Web.csproj` resides
+Now `cd` into the folder where `OpenBullet2.Web.csproj` resides:
 
 ```bash
 cd OpenBullet2/OpenBullet2.Web
 ```
 
-and compile OB2 using
+And compile OB2 using:
 
 ```bash
 dotnet publish --configuration Release
@@ -49,22 +49,22 @@ Then install the required npm packages using
 npm install
 ```
 
-and finally build the web client using
+And finally, build the web client using:
 
 ```bash
 npm run build
 ```
 
-Copy the contents of the `dist` folder to the `OpenBullet2/OpenBullet2.Web/bin/Release/net8.0/publish/wwwroot` folder
+Copy the contents of the `dist` folder to the `OpenBullet2/OpenBullet2.Web/bin/Release/net10.0/publish/wwwroot` folder
 
 ```bash
-cp -r dist/* ../OpenBullet2.Web/bin/Release/net8.0/publish/wwwroot
+cp -r dist/* ../OpenBullet2.Web/bin/Release/net10.0/publish/wwwroot
 ```
 
-you can then navigate to the publish folder and start OB2 with the usual command
+You can then navigate to the publish folder and start OB2 with the usual command:
 
 ```bash
-cd ../OpenBullet2.Web/bin/Release/net8.0/publish
+cd ../OpenBullet2.Web/bin/Release/net10.0/publish
 dotnet ./OpenBullet2.Web.dll
 ```
 
@@ -77,25 +77,25 @@ Now navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000) using your favori
 ![Home Page](/img/installation/web-client/home-page.png)
 
 ## Building the Native Client from its source code (Windows only)
-Open your favourite terminal (or git bash) and run
+Open your favorite terminal (or Git Bash) and run:
 
 ```bash
 git clone https://github.com/openbullet/OpenBullet2/
 ```
 
-now cd into the folder where `OpenBullet2.Native.csproj` resides
+Now `cd` into the folder where `OpenBullet2.Native.csproj` resides:
 
 ```bash
 cd OpenBullet2/OpenBullet2.Native
 ```
 
-and compile OB2 Native using
+And compile OB2 Native using:
 
 ```bash
 dotnet publish --configuration Release
 ```
 
-you can then navigate to the publish folder (`bin/Release/net8.0/publish`) and double-click on `OpenBullet2.Native.exe` to run it.
+You can then navigate to the publish folder (`bin/Release/net10.0/publish`) and double-click `OpenBullet2.Native.exe` to run it.
 
 You should now be able to see the application's homepage
 

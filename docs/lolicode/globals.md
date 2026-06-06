@@ -31,4 +31,4 @@ Some properties are predefined in the `globals` variable. These properties are u
 | -------- | ---- | ----------- |
 | `globals.JobId` | `int` | The ID of the current job (0 in case of the debugger). |
 | `globals.Resources` | `Dictionary<string, ConfigResource>` | A dictionary of resources shared across all bots in the job. Resources can be configured in the Config Settings > Data > Resources tab. |
-| `globals.OwnerId` | `int` | The ID of the user who created the job. The admin user has id 0, while guest users have their own unique IDs. |
+| `globals.OwnerId` | `int` | The ID of the user who created the job. The admin user has ID 0, while guest users have their own unique IDs. |

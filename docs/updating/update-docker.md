@@ -10,7 +10,7 @@ When it comes to Docker, updating OpenBullet 2 is as simple as pulling the lates
 Make sure you mapped the `UserData` folder in the container to a local folder as instructed in the [installation guide](../installation/docker.md), so that you won't lose your data.
 :::
 
-First of all stop and remove the container (it will automatically be removed once stopped if you used the `--rm` flag when starting it). If the name of your container is `openbullet2` then it is enough to execute the following command
+First of all, stop and remove the container (it will automatically be removed once stopped if you used the `--rm` flag when starting it). If the name of your container is `openbullet2`, then it is enough to execute the following command:
 ```bash
 docker stop openbullet2
 ```

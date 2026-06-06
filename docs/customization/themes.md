@@ -7,7 +7,7 @@ sidebar_position: 1
 Themes are a way to customize the look and feel of OpenBullet.
 
 ## Web client
-The web client supports themes. You can change the theme by going to the `Settings` tab, in the `Customization` section, and selecting a theme from the dropdown menu. By default, there is no theme available, but you can add more by clicking on the `+` button. Themes are `.css` files that you can create or download from the internet.
+The web client supports themes. You can change the theme by going to the `Settings` tab, in the `Customization` section, and selecting a theme from the dropdown menu. By default, there are no themes available, but you can add some by clicking on the `+` button. Themes are `.css` files that you can create or download from the internet.
 
 ![Themes](/img/customization/web-customization.png)
 

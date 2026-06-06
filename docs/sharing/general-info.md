@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 
 # Sharing
-The *Sharing* tab allows you to share your configs with other OpenBullet 2 clients. 
+The *Sharing* tab allows you to share your configs with other OpenBullet 2 clients.
 
 :::info INFO
 This feature is only available in the web client.
@@ -23,7 +23,7 @@ You can configure *endpoints* to share your configs. Each endpoint has a unique 
 ![Endpoints](/img/sharing/endpoints.png)
 
 ## Client-side setup
-To set up a remote configs endpoint, go to the Settings > Remote section of OpenBullet 2 and register a new endpoint. You must provide the URL of the endpoint (which includes the domain and the route), and the API key that you received from the server.
+To set up a remote configs endpoint, go to the Settings > Remote section of OpenBullet 2 and register a new endpoint. You must provide the URL of the endpoint (which includes the domain and the route) and the API key that you received from the server.
 
 For example, if the server has an endpoint with the route `/my-route` and the domain `https://ob2.example.com`, you would enter `https://ob2.example.com/api/v1/shared/configs/my-route` in the URL field.
 

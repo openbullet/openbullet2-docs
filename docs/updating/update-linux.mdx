@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # Updating on Linux
-It is good practice to keep your OpenBullet 2 client updated in order to get the latest features and bugfixes.
+It is good practice to keep your OpenBullet 2 client updated in order to get the latest features and bug fixes.
 
 When you see this icon next to the version number, it means it's time to update your client.
 
@@ -16,19 +16,19 @@ When you see this icon next to the version number, it means it's time to update 
 If you click on it, you will see a changelog with the latest changes and a button that will take you to the new release page on GitHub.
 
 ## How to update
-First of all, completely terminate OpenBullet 2's process. Note that this does not mean simply closing the tab in your browser, but it means exiting the console application that first opens when you start OpenBullet 2.
+First of all, completely terminate OpenBullet 2's process. Note that this does not mean simply closing the tab in your browser, but exiting the console application that first opens when you start OpenBullet 2.
 
 To update, navigate into the main folder of OpenBullet 2 and run the updater.
 
 <Tabs>
     <TabItem value="x64" label="x64" default>
         ```bash
-        ./ob2-updater-web-linux-x64
+        ./ob2-web-updater-linux-x64
         ```
     </TabItem>
     <TabItem value="arm64" label="arm64">
         ```bash
-        ./ob2-updater-web-linux-arm64
+        ./ob2-web-updater-linux-arm64
         ```
     </TabItem>
 </Tabs>
@@ -37,7 +37,7 @@ The updater will guide you through the process of updating the Web Client.
 
 ## Troubleshooting
 ### The update fails
-Make sure the update has a successful result by reading the console prompts. The download of the new version might take some time so please wait until all the steps are completed. In case the update fails, you can
+Make sure the update completes successfully by reading the console prompts. The download of the new version might take some time, so please wait until all the steps are completed. In case the update fails, you can:
 1. check your connection
 2. check if `github.com` blocks your IP (since the updater downloads the latest release from GitHub)
 3. try again at a later time

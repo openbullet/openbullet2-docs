@@ -1,29 +1,68 @@
 ---
-sidebar_label: 'MacOS'
+sidebar_label: 'macOS'
 sidebar_position: 3
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 import OBDownloadButton from '@site/src/components/OBDownloadButton';
 
 # Web Client
-If you're a MacOS user, you can only use the Web Client. The updater is not available, since unsigned executables are not allowed to run on MacOS.
+If you're a macOS user, you can only use the Web Client.
 
-## Installation on MacOS
-First of all, download and install the .NET Runtime and ASP.NET Core Runtime by following [these instructions](https://docs.microsoft.com/en-us/dotnet/core/install/macos).
+## Installation on macOS
+Download the correct updater for your Mac and place it in an empty folder in your file system.
 
-Then, download the latest version of OpenBullet 2
+<OBDownloadButton fileName="ob2-web-updater-osx-x64">Web Updater (x64)</OBDownloadButton>&nbsp;&nbsp;
+<OBDownloadButton fileName="ob2-web-updater-osx-arm64">Web Updater (arm64)</OBDownloadButton>
 
-<OBDownloadButton fileName="OpenBullet2.Web.zip">OpenBullet2.Web.zip</OBDownloadButton>
+:::info Info
+You could also directly download [**OpenBullet2.Web-osx-x64.zip**](https://github.com/openbullet/openbullet2/releases/latest/download/OpenBullet2.Web-osx-x64.zip) or [**OpenBullet2.Web-osx-arm64.zip**](https://github.com/openbullet/openbullet2/releases/latest/download/OpenBullet2.Web-osx-arm64.zip), but the updater is recommended since it can be used to easily update your installation in the future.
+:::
 
-Unzip the archive and open a terminal. `cd` into the folder where you placed the unzipped files. Then execute the following command
+<Tabs>
+    <TabItem value="x64" label="x64" default>
+        Open a terminal and `cd` into the folder where you placed the updater. Then execute the following commands:
+        ```bash
+        chmod +x ./ob2-web-updater-osx-x64
+        ./ob2-web-updater-osx-x64
+        ```
+    </TabItem>
+    <TabItem value="arm64" label="arm64">
+        Open a terminal and `cd` into the folder where you placed the updater. Then execute the following commands:
+        ```bash
+        chmod +x ./ob2-web-updater-osx-arm64
+        ./ob2-web-updater-osx-arm64
+        ```
+    </TabItem>
+</Tabs>
+
+If macOS blocks the updater because it is from an unidentified developer, try to open it once, then go to **System Settings > Privacy & Security** and click **Open Anyway** for the blocked app.
+
+Once the updater has finished downloading the latest version of OpenBullet 2, execute these commands to start the application:
 ```bash
-dotnet ./OpenBullet2.Web.dll
+chmod +x ./OpenBullet2.Web
+./OpenBullet2.Web
 ```
 
-Wait until it prints the text you see in the picture below
+If macOS blocks the app on first launch, use the same **Open Anyway** flow in **Privacy & Security** and start it again.
+
+Wait until it prints the text you see in the picture below.
 
 ![Terminal Window](/img/installation/web-client/windows-terminal.png)
 
 Finally, navigate to [http://localhost:5000](http://localhost:5000) using your favorite browser and you should see the home page.
 
 ![Application Window](/img/installation/web-client/home-page.png)
+
+## Troubleshooting
+
+### macOS says the app cannot be opened
+This is expected for unsigned binaries on macOS. Try to run the updater or app once, then open **System Settings > Privacy & Security** and click **Open Anyway** for the blocked executable.
+
+### I downloaded the ZIP instead of the updater
+Unzip the archive, open a terminal in that folder, then run:
+```bash
+chmod +x ./OpenBullet2.Web
+./OpenBullet2.Web
+```

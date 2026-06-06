@@ -32,7 +32,7 @@ Remember that the Regex validation written in the Wordlist Type configuration is
 :::
 
 ### When to use them
-Employing data rules helps to invalidate data that does not conform to a website's requirements before it's even tested on the website itself, reducing the number of data lines that need to be processed, speeding up the run, and decreasing the load on the website.
+Using data rules helps invalidate data that does not conform to a website's requirements before it is even tested on the website itself, reducing the number of data lines that need to be processed, speeding up the run, and decreasing the load on the website.
 
 ### Data rules and multi run jobs
 When a Multi-Run Job runs a config that has data rules, it will check the sliced data line against those rules. If any slice doesn't match a rule, the data line is marked as `INVALID` and discarded.

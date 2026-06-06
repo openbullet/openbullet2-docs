@@ -51,7 +51,7 @@ If you want to run the job again, you will need to rewind the *skip* value to th
 |:--------------|:-------------------------------------------------------|
 |**Total**      |The total number of proxies that are currently in the pool  |
 |**Alive**      |The number of proxies that are still alive and are able to be assigned to bots|
-|**Bad**        |*Not implemented yet*|
+|**Bad**        |The number of proxies that are considered bad and cannot be used due to connectivity or other issues|
 |**Banned**     |The number of proxies that are banned and cannot be assigned to bots until they are unbanned or there is a proxy reload event|
 
 #### Others

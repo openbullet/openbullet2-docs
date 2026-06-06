@@ -22,7 +22,8 @@ At a minimum, a plugin usually contains:
 4. Implement your blocks using the plugin attributes.
 5. Build the project.
 
-The sample plugin repository uses two supported development workflows:
+You can use the [OB2PluginSample repository](https://github.com/openbullet/OB2PluginSample) as a base for your own plugin.
+It includes two supported development workflows:
 - reference `RuriLib` directly from a local clone of the `OpenBullet2` source tree
 - reference a local `RuriLib.dll` from a small SDK-style folder if you do not want to clone the full repo
 

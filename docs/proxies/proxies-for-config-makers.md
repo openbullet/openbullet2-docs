@@ -70,7 +70,7 @@ socks5://username:password@127.0.0.1:8000
 
 If the proxy string does **not** include a type prefix like `(http)` or `(socks5)`, the debugger will use the selected *Proxy Type* field as the default type. If the string includes the prefix, that explicit type is used instead.
 
-For URI-style proxy strings, the scheme defines the type directly. `https://...` is accepted and is treated like an HTTP proxy.
+For URI-style proxy strings, the scheme defines the type directly. `https://...` is accepted as an HTTPS proxy, meaning the connection to the proxy itself is protected with TLS.
 
 ### In LoliCode / C#
 | Property | Type | Notes |
@@ -83,7 +83,7 @@ The `data.Proxy` property provides information about the proxy that is currently
 | Sub-property | Type | Notes |
 |:-------------|:-----|:------|
 | `data.Proxy.Id` | int | only for proxies in proxy groups |
-| `data.Proxy.Type` | ProxyType | enum (Http, Socks4, Socks4a, Socks5) |
+| `data.Proxy.Type` | ProxyType | enum (Http, Https, Socks4, Socks4a, Socks5) |
 | `data.Proxy.Host` | string |  |
 | `data.Proxy.Port` | int |  |
 | `data.Proxy.Username` | string  | empty if none |

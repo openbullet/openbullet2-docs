@@ -140,7 +140,7 @@ SET USEPROXY FALSE
 ```
 ---
 ## SET PROXY
-Sets a given proxy. The available types are: HTTP, SOCKS4, SOCKS4A, SOCKS5.
+Sets a given proxy. The available types are: HTTP, HTTPS, SOCKS4, SOCKS4A, SOCKS5.
 Example:
 ```
 SET PROXY "127.0.0.1" 9050 SOCKS5

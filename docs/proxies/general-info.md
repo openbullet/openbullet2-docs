@@ -25,13 +25,14 @@ To connect to a proxy server, you need to know these things:
 
 The most popular proxy protocols are:
 - HTTP
+- HTTPS
 - SOCKS 4
 - SOCKS 4a
 - SOCKS 5
 
 Each proxy in OpenBullet 2 has a specific type that is needed to know which protocol to use when connecting to that server.
 
-After the connection, a raw TCP stream will be opened between you and the proxy, and the proxy will deliver all the traffic sent on that stream to the destination host on your behalf.
+After the connection, a tunnel will be opened between you and the destination host through the proxy, and the proxy will deliver all the traffic sent on that tunnel to the destination host on your behalf.
 
 ### Anonymity
 Proxy servers can be identified with three main levels of anonymity.

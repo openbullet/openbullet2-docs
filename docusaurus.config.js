@@ -12,7 +12,11 @@ const config = {
 	url: "https://docs.openbullet.dev",
 	baseUrl: "/",
 	onBrokenLinks: "throw",
-	onBrokenMarkdownLinks: "warn",
+	markdown: {
+		hooks: {
+			onBrokenMarkdownLinks: "warn",
+		},
+	},
 	favicon: "img/favicon.ico",
 	organizationName: "openbullet", // Usually your GitHub org/user name.
 	projectName: "OpenBullet2", // Usually your repo name.
@@ -22,11 +26,9 @@ const config = {
 			"classic",
 			/** @type {import('@docusaurus/preset-classic').Options} */
 			({
+				blog: false,
 				docs: {
 					sidebarPath: require.resolve("./sidebars.js"),
-					// Please change this to your repo.
-					editUrl:
-						"https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
 				},
 				theme: {
 					customCss: require.resolve("./src/css/custom.css"),
@@ -40,6 +42,7 @@ const config = {
 			require.resolve("@easyops-cn/docusaurus-search-local"),
 			{
 				hashed: true,
+				indexBlog: false,
 			},
 		],
 	],

@@ -58,7 +58,7 @@ socks4a://127.0.0.1:9050
 socks5://myuser:mypass@127.0.0.1:9050
 ```
 
-In URI-style syntax, the scheme defines the proxy type directly. `https://...` is accepted and treated like an HTTP proxy.
+In URI-style syntax, the scheme defines the proxy type directly. `https://...` is accepted as an HTTPS proxy, meaning the connection to the proxy itself is protected with TLS.
 
 ### Final result
 This is the result after importing the SOCKS 5 freebies from [proxyscrape.com](https://proxyscrape.com):
